@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Imagery
+*.paa
+
+# Backups
+*.blend1
