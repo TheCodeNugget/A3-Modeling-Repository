@@ -35,7 +35,7 @@ class CfgPatches {
 class CfgVehicles {
 	class House_Small_F;
 	
-	class Land_rnc_woodHouse_01: House_Small_F {
+	class Land_rnc_woodenHouse_01: House_Small_F {
 		scope = 2; // 2 = public = shown in editor
 		displayName = "Wooden House 1"; // Name in editor
 		model = "rnc_woodenBuildings\rnc_woodenHouse_01.p3d"; // Path to model
@@ -47,7 +47,7 @@ class CfgVehicles {
 		
 	};
 	
-	class Land_rnc_woodHouse_02: House_Small_F {
+	class Land_rnc_woodenHouse_02: House_Small_F {
 		scope = 2; // 2 = public = shown in editor
 		displayName = "Wooden House 2"; // Name in editor
 		model = "rnc_woodenBuildings\rnc_woodenHouse_02.p3d"; // Path to model
