@@ -97,7 +97,7 @@ class Stage0 {
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_enoch\data\plaster\plaster_orange_co.paa";
+	texture = "a3\structures_f_enoch\data\wallpapers\wallpaper_creme_co.paa";
 	texGen = "1";
 };
 class Stage2 {
@@ -105,7 +105,7 @@ class Stage2 {
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_co.paa";
+	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_CO.paa";
 	texGen = "3";
 };
 class Stage4 {
@@ -141,7 +141,7 @@ class Stage11 {
 	texGen = "0";
 };
 class Stage12 {
-	texture = "a3\structures_f_enoch\data\plaster\plaster_orange_nohq.paa";
+	texture = "a3\structures_f_enoch\data\wallpapers\wallpaper_creme_nohq.paa";
 	texGen = "1";
 };
 class Stage13 {
@@ -149,6 +149,6 @@ class Stage13 {
 	texGen = "2";
 };
 class Stage14 {
-	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_nohq.paa";
+	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_nohq.paa";
 	texGen = "3";
 };
