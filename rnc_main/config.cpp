@@ -72,4 +72,8 @@ class CfgEditorSubcategories {
 	class rnc_transport {
 		displayName = "Transportation";
 	};
+	
+	class rnc_city {
+		displayName = "City";
+	};
 };
