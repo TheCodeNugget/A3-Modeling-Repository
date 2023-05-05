@@ -19,9 +19,9 @@ enum {
 };
 
 class CfgPatches {
-	class rnc_apartments_variant_01 {
-		addonRootClass = "rnc_apartments";
-		requiredAddons[] = {"rnc_apartments"};
+	class rnc_apartments_variant1_cube9 {
+		addonRootClass = "rnc_apartments_variant1";
+		requiredAddons[] = {"rnc_apartments_variant1"};
 		requiredVersion = 0.1;
 		units[] = {
 			"Land_rnc_apt_v1_c9_c1_f3",
@@ -37,7 +37,7 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_c9_c1_f3: House_Small_F {
 		scope = 2;
 		displayName = "Apartment V1/C9/C1/F3";
-		model = "rnc_apartments\variant_01\rnc_apt_v1_c9_c1_f3.p3d";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c1_f3.p3d";
 
 		editorCategory = "rnc_euObjects";
 		editorSubCategory = "rnc_city";
@@ -162,11 +162,11 @@ class CfgVehicles {
 
 	class Land_rnc_apt_v1_9c_c1_f4: Land_rnc_apt_v1_c9_c1_f3{
 		displayName = "Apartment V1/C9/C1/F4";
-		model = "rnc_apartments\variant_01\rnc_apt_v1_c9_c1_f4.p3d";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c1_f4.p3d";
 	};
 
 	class Land_rnc_apt_v1_9c_c1_f5: Land_rnc_apt_v1_c9_c1_f3{
 		displayName = "Apartment V1/C9/C1/F5";
-		model = "rnc_apartments\variant_01\rnc_apt_v1_c9_c1_f5.p3d";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c1_f5.p3d";
 	};
 };
