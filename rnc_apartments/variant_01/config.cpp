@@ -24,7 +24,8 @@ class CfgPatches {
 		requiredAddons[] = {"rnc_apartments"};
 		requiredVersion = 0.1;
 		units[] = {
-			"Land_rnc_apt_v1_c9_c1_f3"
+			"Land_rnc_apt_v1_c9_c1_f3",
+			"Land_rnc_apt_v1_c9_c1_f4"
 		};
 		weapons[] = {};
 	};
@@ -32,7 +33,7 @@ class CfgPatches {
 class CfgVehicles {
 	class House_Small_F;
 
-	class Land_rnc_apt_9c_v1_c1_f3: House_Small_F {
+	class Land_rnc_apt_v1_c9_c1_f3: House_Small_F {
 		scope = 2;
 		displayName = "Apartment V1/C9/C1/F3";
 		model = "rnc_apartments\variant_01\rnc_apt_v1_c9_c1_f3.p3d";
@@ -156,5 +157,10 @@ class CfgVehicles {
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
+	};
+
+	class Land_rnc_apt_v1_9c_c1_f4: Land_rnc_apt_v1_c9_c1_f3{
+		displayName = "Apartment V1/C9/C1/F4";
+		model = "rnc_apartments\variant_01\rnc_apt_v1_c9_c1_f4.p3d";
 	};
 };
