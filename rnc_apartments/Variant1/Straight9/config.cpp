@@ -24,7 +24,7 @@ class CfgPatches {
 		requiredAddons[] = {"rnc_apartments_variant1"};
 		requiredVersion = 0.1;
 		units[] = {
-			"Land_rnc_apt_v1_c9_c1_f3",
+			"Land_rnc_apt_v1_s9_c1_f3",
 		};
 		weapons[] = {};
 	};
@@ -34,8 +34,8 @@ class CfgVehicles {
 
 	class Land_rnc_apt_v1_s9_c1_f3: House_Small_F {
 		scope = 2;
-		displayName = "Apartment V1/C9/C1/F3";
-		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c1_f3.p3d";
+		displayName = "Apartment V1/S9/C1/F3";
+		model = "rnc_apartments\variant1\straight9\rnc_apt_v1_s9_c1_f3.p3d";
 
 		editorCategory = "rnc_euObjects";
 		editorSubCategory = "rnc_city";
