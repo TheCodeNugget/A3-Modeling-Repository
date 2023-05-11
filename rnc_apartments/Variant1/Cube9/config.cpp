@@ -45,6 +45,7 @@ class CfgVehicles {
 
 		destrType = "DestructDefault";
 		armor = 1000;
+		autocenter = false;
 
 		numberOfWindows = 14;
 		numberOfDoors = 3;
