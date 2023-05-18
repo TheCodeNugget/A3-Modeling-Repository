@@ -30,15 +30,6 @@ class CfgPatches {
 class CfgVehicles {
 	class House_Small_F;
 
-	class Land_apt_parts_01: House_Small_F {
-		scope = 2;
-		displayName = "Apartment Parts 01";
-		model = "rnc_apartments\rnc_apt_parts_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
-	};
-
 	class Land_rnc_apt_9c: House_Small_F {
 		scope = 2;
 		displayName = "Apartment 9C 01";
