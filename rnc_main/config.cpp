@@ -19,7 +19,7 @@ enum {
 
 class CfgPatches {
 	class rnc_main {
-		requiredAddons[] = {};
+		requiredAddons[] = {"A3_Structures_F_Mil"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -75,5 +75,47 @@ class CfgEditorSubcategories {
 	
 	class rnc_city {
 		displayName = "City";
+	};
+};
+
+class CfgVehicles {
+	class FlagCarrier;
+	
+	class rotoro_flag_nz_F: FlagCarrier {
+		author = "$STR_A3_Bohemia_Interactive";
+		class SimpleObject {
+			eden = 0;
+			animate[] = {{"flag",0}};
+			hide[] = {};
+			verticalOffset = 3.977;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		_generalMacro = "rotoro_flag_nz_F";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Flag (New Zealand)";
+		class EventHandlers {
+			init = "(_this select 0) setFlagTexture 'rnc_main\ban.paa'";
+		};
+	};
+	
+	class rotoro_flag_laserKiwi_F: FlagCarrier {
+		author = "$STR_A3_Bohemia_Interactive";
+		class SimpleObject {
+			eden = 0;
+			animate[] = {{"flag",0}};
+			hide[] = {};
+			verticalOffset = 3.977;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		_generalMacro = "rotoro_flag_nz_F";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Flag (True New Zealand)";
+		class EventHandlers {
+			init = "(_this select 0) setFlagTexture 'rnc_main\ban.paa'";
+		};
 	};
 };

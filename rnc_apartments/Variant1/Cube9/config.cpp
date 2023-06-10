@@ -45,10 +45,9 @@ class CfgVehicles {
 
 		destrType = "DestructDefault";
 		armor = 1000;
-		autocenter = false;
 
 		numberOfWindows = 14;
-		numberOfDoors = 3;
+		numberOfDoors = 2;
 
 		class Hitpoints {
 			NORMAL_GLASS_HITPOINT(1,0.001,0.4)
@@ -160,6 +159,11 @@ class CfgVehicles {
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
+		// Here are references binding specific positions in Path lod in p3d to specific actions from "class UserActions" for AI to know when to use which doors. The actionBegin# and ActionEnd# is a hardcoded naming system.
+		ActionBegin1 = openDoor_1;
+		ActionEnd1 = openDoor_1;
+		ActionBegin2 = openDoor_2;
+		ActionEnd2 = openDoor_2;
 	};
 
 	class Land_rnc_apt_v1_9c_c1_f4: Land_rnc_apt_v1_c9_c1_f3{

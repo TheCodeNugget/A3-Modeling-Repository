@@ -1,6 +1,8 @@
 objout =  -M="C:\Users\Nugget\Documents\Arma Projects\Really Useless Objects Pack"
 mehout =  -M="C:\Users\Nugget\Documents\Arma Projects\mehland"
+sehout =  -M="C:\Users\Nugget\Documents\Arma Projects\Sehreno"
 .PHONY: mehland
+.PHONY: sehreno
 
 all:
 	pboproject -P P:\rnc_main $(objout)
@@ -30,3 +32,6 @@ apartments:
 
 mehland:
 	pboproject -P P:\mehland $(mehout)
+
+sehreno:
+	pboproject -P P:\Sehreno $(sehout)
