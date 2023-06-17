@@ -27,7 +27,11 @@ class CfgPatches {
 			"Land_rnc_apt_v1_c9_c1_f3",
 			"Land_rnc_apt_v1_c9_c1_f4",
 			"Land_rnc_apt_v1_c9_c1_f5",
-			"Land_rnc_apt_v1_c9_c1_f6"
+			"Land_rnc_apt_v1_c9_c1_f6",
+			"Land_rnc_apt_v1_c9_c2_f3",
+			"Land_rnc_apt_v1_c9_c2_f4",
+			"Land_rnc_apt_v1_c9_c2_f5",
+			"Land_rnc_apt_v1_c9_c2_f6"
 		};
 		weapons[] = {};
 	};
@@ -179,5 +183,25 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_9c_c1_f6: Land_rnc_apt_v1_c9_c1_f3{
 		displayName = "Apartment V1/C9/C1/F6";
 		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c1_f6.p3d";
+	};
+	
+	class Land_rnc_apt_v1_9c_c2_f3: Land_rnc_apt_v1_c9_c1_f3{
+		displayName = "Apartment V1/C9/C2/F3";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c2_f3.p3d";
+	};
+	
+	class Land_rnc_apt_v1_9c_c2_f4: Land_rnc_apt_v1_c9_c1_f3{
+		displayName = "Apartment V1/C9/C2/F4";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c2_f4.p3d";
+	};
+	
+	class Land_rnc_apt_v1_9c_c2_f5: Land_rnc_apt_v1_c9_c1_f3{
+		displayName = "Apartment V1/C9/C2/F5";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c2_f5.p3d";
+	};
+
+	class Land_rnc_apt_v1_9c_c2_f6: Land_rnc_apt_v1_c9_c1_f3{
+		displayName = "Apartment V1/C9/C2/F6";
+		model = "rnc_apartments\variant1\cube9\rnc_apt_v1_c9_c2_f6.p3d";
 	};
 };

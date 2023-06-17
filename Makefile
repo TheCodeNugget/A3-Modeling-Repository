@@ -1,8 +1,10 @@
 objout =  -M="C:\Users\Nugget\Documents\Arma Projects\Really Useless Objects Pack"
 mehout =  -M="C:\Users\Nugget\Documents\Arma Projects\mehland"
 sehout =  -M="C:\Users\Nugget\Documents\Arma Projects\Sehreno"
+waiout =  -M="C:\Users\Nugget\Documents\Arma Projects\Waiheke"
 .PHONY: mehland
 .PHONY: sehreno
+.PHONY: waiheke
 
 all:
 	pboproject -P P:\rnc_main $(objout)
@@ -35,3 +37,6 @@ mehland:
 
 sehreno:
 	pboproject -P P:\Sehreno $(sehout)
+
+waiheke:
+	pboproject -P P:\waiheke $(waiout)
