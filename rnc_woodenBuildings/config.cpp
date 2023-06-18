@@ -182,6 +182,12 @@ class CfgVehicles {
 				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
+		ActionBegin1 = openDoor_1;
+		ActionEnd1 = openDoor_1;
+		ActionBegin2 = openDoor_2;
+		ActionEnd2 = openDoor_2;
+		ActionBegin3 = openDoor_3;
+		ActionEnd3 = openDoor_3;
 	};
 	
 	class Land_rnc_woodenKiosk : House_Small_F {
