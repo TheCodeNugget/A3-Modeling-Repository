@@ -20,8 +20,8 @@ enum {
 
 class CfgPatches {
 	class rnc_apartments_variant1_15x15L {
-		addonRootClass = "rnc_apartments_variant1";
-		requiredAddons[] = {"rnc_apartments_variant1"};
+		addonRootClass = "rnc_apartments";
+		requiredAddons[] = {"rnc_main"};
 		requiredVersion = 0.1;
 		units[] = {
 			"Land_rnc_apt_v1_15x15L_c1_f3",
@@ -46,7 +46,6 @@ class CfgVehicles {
 
 		destrType = "DestructDefault";
 		armor = 1000;
-		autocenter = false;
 
 		numberOfWindows = 12;
 		numberOfDoors = 1;
