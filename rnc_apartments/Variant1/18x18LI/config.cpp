@@ -27,7 +27,11 @@ class CfgPatches {
 			"Land_rnc_apt_v1_18x18LI_c1_f3",
 			"Land_rnc_apt_v1_18x18LI_c1_f4",
 			"Land_rnc_apt_v1_18x18LI_c1_f5",
-			"Land_rnc_apt_v1_18x18LI_c1_f6"
+			"Land_rnc_apt_v1_18x18LI_c1_f6",
+			"Land_rnc_apt_v1_18x18LI_c2_f3",
+			"Land_rnc_apt_v1_18x18LI_c2_f4",
+			"Land_rnc_apt_v1_18x18LI_c2_f5",
+			"Land_rnc_apt_v1_18x18LI_c2_f6"
 		};
 		weapons[] = {};
 	};
@@ -45,10 +49,9 @@ class CfgVehicles {
 
 		destrType = "DestructDefault";
 		armor = 1000;
-		autocenter = false;
 
 		numberOfWindows = 14;
-		numberOfDoors = 1;
+		numberOfDoors = 2;
 
 		class Hitpoints {
 			NORMAL_GLASS_HITPOINT(1,0.001,0.4)
@@ -108,6 +111,7 @@ class CfgVehicles {
 				animPeriod = 1;
 				sound = "GenericDoorsSound";
 			};
+			class door_2_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -147,8 +151,25 @@ class CfgVehicles {
 				condition = (this animationPhase 'Door_1_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
+
+			class openDoor_2 : openDoor_1 {
+				position = Door_2_Trigger;
+				condition = (this animationPhase 'Door_2_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_2 : openDoor_1 {
+				position = Door_2_Trigger;
+				condition = (this animationPhase 'Door_2_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
 		};
+		// Here are references binding specific positions in Path lod in p3d to specific actions from "class UserActions" for AI to know when to use which doors. The actionBegin# and ActionEnd# is a hardcoded naming system.
+		ActionBegin1 = openDoor_1;
+		ActionEnd1 = openDoor_1;
+		ActionBegin2 = openDoor_2;
+		ActionEnd2 = openDoor_2;
 	};
+
 	class Land_rnc_apt_v1_18x18LI_c1_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F4";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f4.p3d";
@@ -162,5 +183,24 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_18x18LI_c1_f6: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F6";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f6.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f3: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F3";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f3.p3d";
+	};
+	class Land_rnc_apt_v1_18x18LI_c2_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F4";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f4.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f5: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F5";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f5.p3d";
+	};
+
+	class Land_rnc_apt_v1_18x18LI_c2_f6: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F6";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f6.p3d";
 	};
 };
