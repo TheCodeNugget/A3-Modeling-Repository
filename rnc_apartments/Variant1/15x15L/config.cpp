@@ -20,14 +20,18 @@ enum {
 
 class CfgPatches {
 	class rnc_apartments_variant1_15x15L {
-		addonRootClass = "rnc_apartments_variant1";
-		requiredAddons[] = {"rnc_apartments_variant1"};
+		addonRootClass = "rnc_apartments";
+		requiredAddons[] = {"rnc_main"};
 		requiredVersion = 0.1;
 		units[] = {
 			"Land_rnc_apt_v1_15x15L_c1_f3",
 			"Land_rnc_apt_v1_15x15L_c1_f4",
 			"Land_rnc_apt_v1_15x15L_c1_f5",
-			"Land_rnc_apt_v1_15x15L_c1_f6"
+			"Land_rnc_apt_v1_15x15L_c1_f6",
+			"Land_rnc_apt_v1_15x15L_c2_f3",
+			"Land_rnc_apt_v1_15x15L_c2_f4",
+			"Land_rnc_apt_v1_15x15L_c2_f5",
+			"Land_rnc_apt_v1_15x15L_c2_f6"
 		};
 		weapons[] = {};
 	};
@@ -45,7 +49,6 @@ class CfgVehicles {
 
 		destrType = "DestructDefault";
 		armor = 1000;
-		autocenter = false;
 
 		numberOfWindows = 12;
 		numberOfDoors = 1;
@@ -158,5 +161,25 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_15x15L_c1_f6: Land_rnc_apt_v1_15x15L_c1_f3{
 		displayName = "Apartment V1/15x15L/C1/F6";
 		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c1_f6.p3d";
+	};
+	
+	class Land_rnc_apt_v1_15x15L_c2_f3: Land_rnc_apt_v1_15x15L_c1_f3{
+		displayName = "Apartment V1/15x15L/C2/F3";
+		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c2_f3.p3d";
+	};
+	
+	class Land_rnc_apt_v1_15x15L_c2_f4: Land_rnc_apt_v1_15x15L_c1_f3{
+		displayName = "Apartment V1/15x15L/C2/F4";
+		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c2_f4.p3d";
+	};
+	
+	class Land_rnc_apt_v1_15x15L_c2_f5: Land_rnc_apt_v1_15x15L_c1_f3{
+		displayName = "Apartment V1/15x15L/C2/F5";
+		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c2_f5.p3d";
+	};
+	
+	class Land_rnc_apt_v1_15x15L_c2_f6: Land_rnc_apt_v1_15x15L_c1_f3{
+		displayName = "Apartment V1/15x15L/C2/F6";
+		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c2_f6.p3d";
 	};
 };
