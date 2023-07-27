@@ -27,60 +27,43 @@ class CfgPatches {
 		weapons[] = {};
 	};
 };
-class CfgVehicles {
-	class House_Small_F;
 
-	class Land_rnc_apt_9c: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 9C 01";
-		model = "rnc_apartments\rnc_apt_9C_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+class CfgEditorCategories {
+	class rnc_apartments { // Category class, you point to it in editorCategory property
+		displayName = "Apartments (R&C)"; // Name visible in the list
 	};
+};
 
-	class Land_rnc_apt_9s: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 9S 01";
-		model = "rnc_apartments\rnc_apt_9S_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+class CfgEditorSubcategories {
+	class rnc_v1_c9 { // Category class, you point to it in editorSubcategory property
+		displayName = "V1/C9"; // Name visible in the list
 	};
-
-	class Land_rnc_apt_16s: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 16S 01";
-		model = "rnc_apartments\rnc_apt_16S_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+	
+	class rnc_v1_s9 { // Category class, you point to it in editorSubcategory property
+		displayName = "V1/S9"; // Name visible in the list
 	};
-
-	class Land_rnc_apt_21s: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 21S 01";
-		model = "rnc_apartments\rnc_apt_21S_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+	
+	class rnc_v1_15x15L { // Category class, you point to it in editorSubcategory property
+		displayName = "V1/15x15L"; // Name visible in the list
 	};
-
-	class Land_rnc_apt_17x21l: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 17x21L 01";
-		model = "rnc_apartments\rnc_apt_17x21L_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+	
+	class rnc_v1_18x18LI { // Category class, you point to it in editorSubcategory property
+		displayName = "V1/18x18LI"; // Name visible in the list
 	};
-
-	class Land_rnc_apt_21x17l: House_Small_F {
-		scope = 2;
-		displayName = "Apartment 21x17L 01";
-		model = "rnc_apartments\rnc_apt_21x17L_01.p3d";
-
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+	
+	class rnc_v2_c9 { // Category class, you point to it in editorSubcategory property
+		displayName = "V2/C9"; // Name visible in the list
+	};
+	
+	class rnc_v2_s9 { // Category class, you point to it in editorSubcategory property
+		displayName = "V2/S9"; // Name visible in the list
+	};
+	
+	class rnc_v2_15x15L { // Category class, you point to it in editorSubcategory property
+		displayName = "V2/15x15L"; // Name visible in the list
+	};
+	
+	class rnc_v2_18x18LI { // Category class, you point to it in editorSubcategory property
+		displayName = "V2/18x18LI"; // Name visible in the list
 	};
 };
