@@ -37,8 +37,8 @@ class CfgVehicles {
 		displayName = "Variant 2 Parts";
 		model = "rnc_apartments\variant2\variant2_parts.p3d";
 
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+		editorCategory = "rnc_apartments";
+		//editorSubCategory = "rnc_city";
 
 		destrType = "DestructDefault";
 		armor = 1000;

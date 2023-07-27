@@ -44,8 +44,11 @@ class CfgVehicles {
 		displayName = "Apartment V1/S9/C1/F3";
 		model = "rnc_apartments\variant1\straight9\rnc_apt_v1_s9_c1_f3.p3d";
 
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
+		editorCategory = "rnc_apartments";
+		editorSubCategory = "rnc_v1_s9";
+		
+		icon = "iconObject_1x2";
+		mapsize = 4;
 
 		destrType = "DestructDefault";
 		armor = 1000;

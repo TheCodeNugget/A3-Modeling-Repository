@@ -44,9 +44,12 @@ class CfgVehicles {
 		displayName = "Apartment V1/18x18LI/C1/F3";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f3.p3d";
 
-		editorCategory = "rnc_euObjects";
-		editorSubCategory = "rnc_city";
-
+		editorCategory = "rnc_apartments";
+		editorSubCategory = "rnc_v1_18x18LI";
+		
+		icon = "iconObject_1x2";
+		mapsize = 4;
+		
 		destrType = "DestructDefault";
 		armor = 1000;
 
