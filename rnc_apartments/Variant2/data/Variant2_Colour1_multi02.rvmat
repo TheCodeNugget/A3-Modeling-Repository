@@ -98,15 +98,15 @@ class Stage0 {
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_argo\data\wall\Wall_01_V2_pink_CO.paa"; // Red Paint - 1024 x 1024 - 256
+	texture = "a3\structures_f_argo\data\wall\Wall_01_V2_pink_CO.paa"; // Unused
 	texGen = "1";
 };
 class Stage2 {
-	texture = "a3\structures_f_enoch\data\bricks\Bricks_broken_dirt_04_CO.paa"; // Ground Bricks - 1024 x 1024 - 256
+	texture = "a3\structures_f_enoch\data\bricks\Bricks_broken_dirt_04_CO.paa"; // Unused
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\Bricks\G_house_briks_co.paa"; // Upper Bricks - 1024 x 1024 - 256
+	texture = "a3\structures_f_enoch\data\Bricks\G_house_briks_co.paa"; // Unused
 	texGen = "3";
 };
 class Stage4 {

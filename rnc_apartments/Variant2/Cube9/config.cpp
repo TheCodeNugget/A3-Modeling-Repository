@@ -24,7 +24,14 @@ class CfgPatches {
 		requiredAddons[] = {"rnc_main"};
 		requiredVersion = 0.1;
 		units[] = {
-			"Land_rnc_apt_v2_c9_c1_f3"
+			"Land_rnc_apt_v2_c9_c1_f3",
+			"Land_rnc_apt_v2_c9_c1_f4",
+			"Land_rnc_apt_v2_c9_c1_f5",
+			"Land_rnc_apt_v2_c9_c1_f6",
+			"Land_rnc_apt_v2_c9_c1_f3_m",
+			"Land_rnc_apt_v2_c9_c1_f3_m",
+			"Land_rnc_apt_v2_c9_c1_f3_m",
+			"Land_rnc_apt_v2_c9_c1_f3_m"
 		};
 		weapons[] = {};
 	};
@@ -139,6 +146,7 @@ class CfgVehicles {
 		ActionBegin1 = openDoor_1;
 		ActionEnd1 = openDoor_1;
 	};
+	
 	class Land_rnc_apt_v2_c9_c1_f4: Land_rnc_apt_v2_c9_c1_f3{
 		displayName = "Apartment V2/C9/C1/F4";
 		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f4.p3d";
@@ -152,5 +160,25 @@ class CfgVehicles {
 	class Land_rnc_apt_v2_c9_c1_f6: Land_rnc_apt_v2_c9_c1_f3{
 		displayName = "Apartment V2/C9/C1/F6";
 		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f6.p3d";
+	};
+	
+	class Land_rnc_apt_v2_c9_c1_f3_m: Land_rnc_apt_v2_c9_c1_f3{
+		displayName = "Apartment V2/C9/C1/F3/M";
+		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f3_m.p3d";
+	};
+	
+	class Land_rnc_apt_v2_c9_c1_f4_m: Land_rnc_apt_v2_c9_c1_f3{
+		displayName = "Apartment V2/C9/C1/F4/M";
+		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f4_m.p3d";
+	};
+	
+	class Land_rnc_apt_v2_c9_c1_f5_m: Land_rnc_apt_v2_c9_c1_f3{
+		displayName = "Apartment V2/C9/C1/F5/M";
+		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f5_m.p3d";
+	};
+	
+	class Land_rnc_apt_v2_c9_c1_f6_m: Land_rnc_apt_v2_c9_c1_f3{
+		displayName = "Apartment V2/C9/C1/F6/M";
+		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f6_m.p3d";
 	};
 };
