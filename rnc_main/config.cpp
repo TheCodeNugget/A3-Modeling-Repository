@@ -76,4 +76,8 @@ class CfgEditorSubcategories {
 	class rnc_city {
 		displayName = "City";
 	};
+	
+	class rnc_lamps {
+		displayName = "Lamps";
+	};
 };

@@ -25,6 +25,9 @@ sea:
 
 signs:
 	pboproject -P P:\rnc_signs $(objout)
+	
+misc:
+	pboproject -P P:\rnc_misc $(objout)
 
 woodenBuildings:
 	pboproject -P P:\rnc_woodenBuildings $(objout)
