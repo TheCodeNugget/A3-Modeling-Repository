@@ -105,7 +105,7 @@ class Stage2 {
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_CO.paa"; // Rusty Metal - 1024 x 1024 - 512
+	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_CO.paa"; // Rusty Metal - 2048 x 2048 - 1024
 	texGen = "3";
 };
 class Stage4 {

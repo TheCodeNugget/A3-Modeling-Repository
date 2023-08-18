@@ -92,11 +92,11 @@ class TexGen8 {
 };
 
 class Stage0 {
-	texture = "a3\structures_f_enoch\data\bricks\housev_2i_brick_co.paa"; // Bricks - 1024 x 1024 - 512
+	texture = "a3\structures_f_enoch\data\bricks\housev_2i_brick_co.paa"; // Bricks - 1024 x 1024 - 256
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_enoch\data\concrete\concrete_bare_co.paa"; // Concrete - 1024 x 1024 - 512
+	texture = "a3\structures_f_enoch\data\concrete\concrete_bare_co.paa"; // Concrete - 512 x 512 - 256
 	texGen = "1";
 };
 class Stage2 {
