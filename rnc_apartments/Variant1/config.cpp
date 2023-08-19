@@ -53,13 +53,17 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(4,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(6,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(7,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(8,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(9,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(10,0.001,0.4)
 		};
 		
 		class Damage {
 			tex[] = {
 				// Window textures
-				"A3\Structures_F\Data\Windows\window_set_CA.paa",
-				"A3\Structures_F\Data\Windows\destruct_half_window_set_CA.paa",
+				"A3\Structures_F_exp\Data\glass\window_set_dark_CA.paa",
+				"A3\Structures_F_exp\Data\glass\destruct_half_window_set_dark_CA.paa",
 
 				// Grey color
 				"#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,co)",
@@ -83,9 +87,9 @@ class CfgVehicles {
 			};
 
 			mat[] = {
-				"A3\Structures_F\Data\Windows\window_set.rvmat",
-				"A3\Structures_F\Data\Windows\destruct_half_window_set.rvmat",
-				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
+				"A3\Structures_F_exp\Data\glass\window_set_dark.rvmat",
+				"A3\Structures_F_exp\Data\glass\destruct_half_window_set_dark.rvmat",
+				"A3\Structures_F_exp\Data\glass\destruct_full_window_set_dark.rvmat"
 			};
 		};
 
@@ -96,6 +100,7 @@ class CfgVehicles {
 				animPeriod = 1;
 				sound = "GenericDoorsSound";
 			};
+			class door_2_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -107,6 +112,10 @@ class CfgVehicles {
 			class glass_4_source : glass_1_source { hitpoint = "glass_4_hitpoint"; };
 			class glass_5_source : glass_1_source { hitpoint = "glass_5_hitpoint"; };
 			class glass_6_source : glass_1_source { hitpoint = "glass_6_hitpoint"; };
+			class glass_7_source : glass_1_source { hitpoint = "glass_7_hitpoint"; };
+			class glass_8_source : glass_1_source { hitpoint = "glass_8_hitpoint"; };
+			class glass_9_source : glass_1_source { hitpoint = "glass_9_hitpoint"; };
+			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
 		};
 		
 		class UserActions {
@@ -126,6 +135,17 @@ class CfgVehicles {
 				priority = 0.2;
 				condition = (this animationPhase 'Door_1_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_2 : openDoor_1 {
+				position = Door_2_Trigger;
+				condition = (this animationPhase 'Door_2_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_2 : openDoor_1 {
+				position = Door_2_Trigger;
+				condition = (this animationPhase 'Door_2_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
 	};
