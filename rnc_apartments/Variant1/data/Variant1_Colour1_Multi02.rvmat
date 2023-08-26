@@ -93,7 +93,7 @@ class TexGen8 {
 };
 
 class Stage0 {
-	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_co.paa"; // Dark Wood - 1024 x 1024 - 512
+	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_co.paa"; // Dark Wood - 1024 x 1024 - 128
 	texGen = "0";
 };
 class Stage1 {
@@ -101,7 +101,7 @@ class Stage1 {
 	texGen = "1";
 };
 class Stage2 {
-	texture = "a3\structures_f_enoch\data\plaster\plasterwhite_old_co.paa"; // White Plaster - 1024 x 1024 - 512
+	texture = "a3\structures_f_enoch\data\plaster\plasterwhite_old_co.paa"; // White Plaster - 1024 x 1024 - 128
 	texGen = "2";
 };
 class Stage3 {

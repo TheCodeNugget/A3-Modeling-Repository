@@ -29,8 +29,8 @@ class TexGen1 {
 class TexGen2 {
 	uvSource = "tex";
 	class uvTransform {
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
+		aside[] = {2,0,0};
+		up[] = {0,2,0};
 		dir[] = {0,0,0};
 		pos[] = {0,0,0};
 	};
@@ -91,20 +91,22 @@ class TexGen8 {
 	};
 };
 
+// Comments Below Reference how textures are referenced in source files and their texel densities
+// Format --> Texture Name - Texture Size - Texel Density
 class Stage0 {
-	texture = "a3\structures_f_enoch\data\bricks\housev_2i_brick_co.paa"; // Bricks - 1024 x 1024 - 256
+	texture = "a3\structures_f_enoch\data\plaster\church_04_plaster_02_damaged_CO.paa"; // Ext Plaster - 1024x1024 - 256
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_enoch\data\concrete\concrete_bare_co.paa"; // Concrete - 512 x 512 - 256
+	texture = "a3\structures_f_enoch\data\concrete\podezdivka_sediva_co.paa"; // Concrete - 1024x1024 - 1024
 	texGen = "1";
 };
 class Stage2 {
-	texture = "rnc_main\wall\plasterWall_orange_01_CO.paa"; // Plaster Orange - 1024 x 1024 - 128
+	texture = "a3\structures_f_enoch\data\wood\wood_planks_green1_co.paa"; // Ext Wood 1024x1024 - 256
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\roof\cowshed_roof_co.paa"; // Roof Plates - 1024 x 1024 - 128
+	texture = "a3\structures_f_enoch\data\roof_grey_old_wave_01_co.paa"; // Metal Roofing - 1024x1024 - 256
 	texGen = "3";
 };
 class Stage4 {
@@ -136,18 +138,18 @@ class Stage10 {
 	texGen = "4";
 };
 class Stage11 {
-	texture = "a3\structures_f_enoch\data\bricks\housev_2i_brick_nohq.paa";
+	texture = "a3\structures_f_enoch\data\plaster\church_04_plaster_02_damaged_NOHQ.paa";
 	texGen = "0";
 };
 class Stage12 {
-	texture = "a3\structures_f_enoch\data\concrete\concrete_bare_nohq.paa";
+	texture = "a3\structures_f_enoch\data\concrete\podezdivka_sediva_nohq.paa";
 	texGen = "1";
 };
 class Stage13 {
-	texture = "rnc_main\wall\plasterWall_orange_01_NOHQ.paa";
+	texture = "a3\structures_f_enoch\data\wood\wood_planks_brown1_nohq.paa";
 	texGen = "2";
 };
 class Stage14 {
-	texture = "a3\structures_f_enoch\data\roof\cowshed_roof_nohq.paa";
+	texture = "a3\structures_f_enoch\data\roof_grey_old_wave_01_nohq.paa";
 	texGen = "3";
 };

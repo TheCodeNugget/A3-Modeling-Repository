@@ -67,10 +67,6 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(8,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(9,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(10,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(11,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(12,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(13,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(14,0.001,0.4)
 		};
 
 		class Damage {
@@ -115,6 +111,7 @@ class CfgVehicles {
 				sound = "GenericDoorsSound";
 			};
 			class door_2_source : door_1_source {};
+			class door_3_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -130,10 +127,6 @@ class CfgVehicles {
 			class glass_8_source : glass_1_source { hitpoint = "glass_8_hitpoint"; };
 			class glass_9_source : glass_1_source { hitpoint = "glass_9_hitpoint"; };
 			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
-			class glass_11_source : glass_1_source { hitpoint = "glass_11_hitpoint"; };
-			class glass_12_source : glass_1_source { hitpoint = "glass_12_hitpoint"; };
-			class glass_13_source : glass_1_source { hitpoint = "glass_13_hitpoint"; };
-			class glass_14_source : glass_1_source { hitpoint = "glass_14_hitpoint"; };
 		};
 		
 		class UserActions {
@@ -160,10 +153,21 @@ class CfgVehicles {
 				condition = (this animationPhase 'Door_2_rot') < 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen);
 			};
-			class closeDoor_2 : openDoor_1 {
+			class closeDoor_2 : closeDoor_1 {
 				position = Door_2_Trigger;
 				condition = (this animationPhase 'Door_2_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_3 : openDoor_1 {
+				position = Door_3_Trigger;
+				condition = (this animationPhase 'Door_3_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_3 : closeDoor_1 {
+				position = Door_3_Trigger;
+				condition = (this animationPhase 'Door_3_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
 		// Here are references binding specific positions in Path lod in p3d to specific actions from "class UserActions" for AI to know when to use which doors. The actionBegin# and ActionEnd# is a hardcoded naming system.
@@ -171,6 +175,8 @@ class CfgVehicles {
 		ActionEnd1 = openDoor_1;
 		ActionBegin2 = openDoor_2;
 		ActionEnd2 = openDoor_2;
+		ActionBegin3 = openDoor_3;
+		ActionEnd3 = openDoor_3;
 	};
 
 	class Land_rnc_apt_v1_18x18LI_c1_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
