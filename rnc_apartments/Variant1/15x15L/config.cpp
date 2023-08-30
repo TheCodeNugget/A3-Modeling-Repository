@@ -53,8 +53,8 @@ class CfgVehicles {
 		destrType = "DestructDefault";
 		armor = 1000;
 
-		numberOfWindows = 12;
-		numberOfDoors = 1;
+		numberOfWindows = 18;
+		numberOfDoors = 4;
 
 		class Hitpoints {
 			NORMAL_GLASS_HITPOINT(1,0.001,0.4)
@@ -69,6 +69,12 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(10,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(11,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(12,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(13,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(14,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(15,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(16,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(17,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(18,0.001,0.4)
 		};
 
 		class Damage {
@@ -112,6 +118,9 @@ class CfgVehicles {
 				animPeriod = 1;
 				sound = "GenericDoorsSound";
 			};
+			class door_2_source : door_1_source {};
+			class door_3_source : door_1_source {};
+			class door_4_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -129,6 +138,12 @@ class CfgVehicles {
 			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
 			class glass_11_source : glass_1_source { hitpoint = "glass_11_hitpoint"; };
 			class glass_12_source : glass_1_source { hitpoint = "glass_12_hitpoint"; };
+			class glass_13_source : glass_1_source { hitpoint = "glass_13_hitpoint"; };
+			class glass_14_source : glass_1_source { hitpoint = "glass_14_hitpoint"; };
+			class glass_15_source : glass_1_source { hitpoint = "glass_15_hitpoint"; };
+			class glass_16_source : glass_1_source { hitpoint = "glass_16_hitpoint"; };
+			class glass_17_source : glass_1_source { hitpoint = "glass_17_hitpoint"; };
+			class glass_18_source : glass_1_source { hitpoint = "glass_18_hitpoint"; };
 		};
 		
 		class UserActions {
@@ -148,6 +163,60 @@ class CfgVehicles {
 				priority = 0.2;
 				condition = (this animationPhase 'Door_1_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_1_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_2 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />"; // This is displayed in the center of the screen just below crosshair. In this case it's an icon, not a text.
+				displayName = "$STR_DN_OUT_O_DOOR"; // Label of the action used in the action menu itself.
+				position = Door_2_Trigger; // Point in Memory lod in p3d around which the action is available.
+				priority = 0.4; // Priority coefficient used for sorting action in the action menu.
+				radius = 1.75; // Range around the above defined point in which you need to be to access the action.
+				aiMaxRange = 5.25;
+				onlyForPlayer = false; // Defines if the action is available only to players or AI as well.
+				condition = (this animationPhase 'Door_2_rot') < 0.5; // Condition for showing the action in action menu. In this case it checks if the door is closed and if the part of the house in which the door is located hasn't been destroyed yet).
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen); // Action taken when this action is selected in the action menu. In this case it calls a function that opens the door.
+			};
+			class closeDoor_2: openDoor_2 {
+				displayName = "$STR_DN_OUT_C_DOOR";
+				priority = 0.2;
+				condition = (this animationPhase 'Door_2_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_3 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />"; // This is displayed in the center of the screen just below crosshair. In this case it's an icon, not a text.
+				displayName = "$STR_DN_OUT_O_DOOR"; // Label of the action used in the action menu itself.
+				position = Door_3_Trigger; // Point in Memory lod in p3d around which the action is available.
+				priority = 0.4; // Priority coefficient used for sorting action in the action menu.
+				radius = 1.75; // Range around the above defined point in which you need to be to access the action.
+				aiMaxRange = 5.25;
+				onlyForPlayer = false; // Defines if the action is available only to players or AI as well.
+				condition = (this animationPhase 'Door_3_rot') < 0.5; // Condition for showing the action in action menu. In this case it checks if the door is closed and if the part of the house in which the door is located hasn't been destroyed yet).
+				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleOpen); // Action taken when this action is selected in the action menu. In this case it calls a function that opens the door.
+			};
+			class closeDoor_3: openDoor_3 {
+				displayName = "$STR_DN_OUT_C_DOOR";
+				priority = 0.2;
+				condition = (this animationPhase 'Door_3_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_4 {
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />"; // This is displayed in the center of the screen just below crosshair. In this case it's an icon, not a text.
+				displayName = "$STR_DN_OUT_O_DOOR"; // Label of the action used in the action menu itself.
+				position = Door_4_Trigger; // Point in Memory lod in p3d around which the action is available.
+				priority = 0.4; // Priority coefficient used for sorting action in the action menu.
+				radius = 1.75; // Range around the above defined point in which you need to be to access the action.
+				aiMaxRange = 5.25;
+				onlyForPlayer = false; // Defines if the action is available only to players or AI as well.
+				condition = (this animationPhase 'Door_4_rot') < 0.5; // Condition for showing the action in action menu. In this case it checks if the door is closed and if the part of the house in which the door is located hasn't been destroyed yet).
+				statement = ([this, 'Door_4_rot'] call BIS_fnc_DoorNoHandleOpen); // Action taken when this action is selected in the action menu. In this case it calls a function that opens the door.
+			};
+			class closeDoor_4: openDoor_4 {
+				displayName = "$STR_DN_OUT_C_DOOR";
+				priority = 0.2;
+				condition = (this animationPhase 'Door_4_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_4_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 		};
 	};

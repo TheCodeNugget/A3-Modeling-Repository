@@ -100,11 +100,11 @@ class Stage1 {
 	texGen = "1";
 };
 class Stage2 {
-	texture = "rnc_main\wall\plasterWall_orange_01_CO.paa"; // Plaster Orange - 1024 x 1024 - 128
+	texture = "rnc_main\wall\cinderWall_blueAndWhite_co.paa"; // Plaster Orange - 1024 x 1024 - 341.41
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\roof\cowshed_roof_co.paa"; // Roof Plates - 1024 x 1024 - 128
+	texture = "rnc_main\tile\bitumenTile01_co.paa"; // Roof Plates - 1024 x 1024 - 256
 	texGen = "3";
 };
 class Stage4 {
@@ -144,10 +144,10 @@ class Stage12 {
 	texGen = "1";
 };
 class Stage13 {
-	texture = "rnc_main\wall\plasterWall_orange_01_NOHQ.paa";
+	texture = "rnc_main\wall\cinderWall_NOHQ.paa";
 	texGen = "2";
 };
 class Stage14 {
-	texture = "a3\structures_f_enoch\data\roof\cowshed_roof_nohq.paa";
+	texture = "rnc_main\tile\bitumenTile01_nohq.paa";
 	texGen = "3";
 };
