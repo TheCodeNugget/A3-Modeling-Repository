@@ -2,6 +2,7 @@ objout =  -M="C:\Users\Nugget\Documents\Arma Projects\Really Useless Objects Pac
 mehout =  -M="C:\Users\Nugget\Documents\Arma Projects\mehland"
 sehout =  -M="C:\Users\Nugget\Documents\Arma Projects\Sehreno"
 waiout =  -M="C:\Users\Nugget\Documents\Arma Projects\Waiheke"
+shkout =  -M="C:\Users\Nugget\Documents\Arma Projects\A3Pishock"
 .PHONY: mehland
 .PHONY: sehreno
 .PHONY: waiheke
@@ -43,3 +44,6 @@ sehreno:
 
 waiheke:
 	pboproject -P P:\waiheke $(waiout)
+
+shock:
+	pboproject -P P:\A3_piShock $(shkout)

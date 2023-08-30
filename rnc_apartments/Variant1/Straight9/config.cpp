@@ -64,12 +64,6 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(6,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(7,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(8,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(9,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(10,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(11,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(12,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(13,0.001,0.4)
 		};
 
 		class Damage {
@@ -126,12 +120,6 @@ class CfgVehicles {
 			class glass_5_source : glass_1_source { hitpoint = "glass_5_hitpoint"; };
 			class glass_6_source : glass_1_source { hitpoint = "glass_6_hitpoint"; };
 			class glass_7_source : glass_1_source { hitpoint = "glass_7_hitpoint"; };
-			class glass_8_source : glass_1_source { hitpoint = "glass_8_hitpoint"; };
-			class glass_9_source : glass_1_source { hitpoint = "glass_9_hitpoint"; };
-			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
-			class glass_11_source : glass_1_source { hitpoint = "glass_11_hitpoint"; };
-			class glass_12_source : glass_1_source { hitpoint = "glass_12_hitpoint"; };
-			class glass_13_source : glass_1_source { hitpoint = "glass_13_hitpoint"; };
 		};
 		
 		class UserActions {
