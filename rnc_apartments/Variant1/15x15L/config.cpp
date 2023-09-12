@@ -37,9 +37,9 @@ class CfgPatches {
 	};
 };
 class CfgVehicles {
-	class House_Small_F;
-
-	class Land_rnc_apt_v1_15x15L_c1_f3: House_Small_F {
+	
+	class rnc_house_base;
+	class Land_rnc_apt_v1_15x15L_c1_f3: rnc_house_base {
 		scope = 2;
 		displayName = "Apartment V1/15x15L/C1/F3";
 		model = "rnc_apartments\variant1\15x15L\rnc_apt_v1_15x15L_c1_f3.p3d";

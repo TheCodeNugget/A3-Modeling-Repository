@@ -26,6 +26,29 @@ class CfgPatches {
 	};
 };
 
+class CfgFunctions {
+	class RNC {
+		tag = "RNC";
+		class functions {
+			file = "\rnc_main\functions";
+			class house_snap{};
+		};
+	};
+};
+
+class CfgVehicles {
+	class House_Small_F{
+		class Eventhandlers;
+	};
+	
+	class rnc_house_base: House_Small_F{
+		class EventHandlers: EventHandlers{
+			dragged3DEN = "_this call rnc_fnc_house_snap;";
+			registeredToWorld3DEN = "_this call rnc_fnc_house_snap;";
+		};
+	};
+};
+
 class CfgEditorCategories {
 	class rnc_euObjects { // Category class, you point to it in editorCategory property
 		displayName = "Structures European (R&C)"; // Name visible in the list
