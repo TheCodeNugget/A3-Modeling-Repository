@@ -98,7 +98,7 @@ class Stage0 {
 	texGen = "0";
 };
 class Stage1 {
-	texture = "rnc_main\wall\ornate_wall_1_CO.paa"; // Orange Plaster - 1024 x 1024 - ???
+	texture = "rnc_main\wall\ornate_wall_1_CO.paa"; // Orange Plaster - 1024 x 1024 - 256
 	texGen = "1";
 };
 class Stage2 {
