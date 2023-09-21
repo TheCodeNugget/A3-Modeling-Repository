@@ -33,6 +33,7 @@
 
 # Imagery
 *.paa
+*.png
 
 # Backups
 *.blend1

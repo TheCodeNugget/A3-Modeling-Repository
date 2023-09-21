@@ -35,6 +35,9 @@ woodenBuildings:
 
 apartments:
 	pboproject -P P:\rnc_apartments $(objout)
+	
+american:
+	pboproject -P P:\rnc_american $(objout)
 
 mehland:
 	pboproject -P P:\mehland $(mehout)
