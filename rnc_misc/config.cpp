@@ -29,6 +29,23 @@ class CfgPatches {
 	};
 };
 class CfgVehicles {
+	
+	class NonStrategic;
+	class rnc_ISOTrailer: NonStrategic
+	{
+		author = "RUMM & COKE Team";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "ISO Trailer";
+		model = "rnc_misc\ISOTrailer.p3d";
+		icon = "iconObject_10x1";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "rnc_waterObj";
+		vehicleClass = "Structures";
+		destrType = "DestructNo";
+		class DestructionEffects{};
+	};
+	
 	class Lamps_base_F;
 	class Land_rnc_lamp1_single_dblue_off: Lamps_base_F {
 		author = "Rumm & Coke Team";
