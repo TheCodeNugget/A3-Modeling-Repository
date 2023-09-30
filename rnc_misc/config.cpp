@@ -30,20 +30,30 @@ class CfgPatches {
 };
 class CfgVehicles {
 	
-	class NonStrategic;
-	class rnc_ISOTrailer: NonStrategic
-	{
+	class House_Small_F;
+	class Land_rnc_container_trailer: House_Small_F {
 		author = "RUMM & COKE Team";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.358;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		_generalMacro = "Land_rnc_container_trailer";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "ISO Trailer";
-		model = "rnc_misc\ISOTrailer.p3d";
-		icon = "iconObject_10x1";
+		displayName = "Container Trailer";
+		model = "rnc_misc\rnc_container_trailer.p3d";
+		icon = "iconObject_5x2";
 		editorCategory = "rnc_miscObjects";
 		editorSubcategory = "rnc_waterObj";
-		vehicleClass = "Structures";
-		destrType = "DestructNo";
-		class DestructionEffects{};
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
 	};
 	
 	class Lamps_base_F;
