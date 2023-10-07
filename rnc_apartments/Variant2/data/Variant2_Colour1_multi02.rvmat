@@ -102,7 +102,7 @@ class Stage1 {
 	texGen = "1";
 };
 class Stage2 {
-	texture = "rnc_main\tile\stoneTiles_1_CO.paa"; // Stone Tile
+	texture = "a3\structures_f_enoch\data\floor\wood_floor\parquets1dark_co.paa"; // Parquet Floor - 1024 x 1024 - 256
 	texGen = "2";
 };
 class Stage3 {
@@ -122,7 +122,7 @@ class Stage6 {
 	texGen = 6;
 };
 class Stage7 {
-	texture = "rnc_main\tile\stoneTiles_1_dtsmdi.paa";
+	texture = "a3\structures_f_enoch\data\floor\wood_floor\parquets1dark_smdi.paa";
 	texGen = 7;
 };
 class Stage8 {
@@ -146,7 +146,7 @@ class Stage12 {
 	texGen = "1";
 };
 class Stage13 {
-	texture = "rnc_main\tile\stoneTiles_1_nohq.paa";
+	texture = "a3\structures_f_enoch\data\floor\wood_floor\parquets1dark_nohq.paa";
 	texGen = "2";
 };
 class Stage14 {
