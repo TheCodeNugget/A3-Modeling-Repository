@@ -27,19 +27,15 @@ class CfgPatches {
 			"Land_rnc_apt_v2_18x18LI_c1_f3",
 			"Land_rnc_apt_v2_18x18LI_c1_f4",
 			"Land_rnc_apt_v2_18x18LI_c1_f5",
-			"Land_rnc_apt_v2_18x18LI_c1_f6",
-			"Land_rnc_apt_v2_18x18LI_c2_f3",
-			"Land_rnc_apt_v2_18x18LI_c2_f4",
-			"Land_rnc_apt_v2_18x18LI_c2_f5",
-			"Land_rnc_apt_v2_18x18LI_c2_f6"
+			"Land_rnc_apt_v2_18x18LI_c1_f6"
 		};
 		weapons[] = {};
 	};
 };
 class CfgVehicles {
-	class House_Small_F;
+	class rnc_house_base;
 
-	class Land_rnc_apt_v2_18x18LI_c1_f3: House_Small_F {
+	class Land_rnc_apt_v2_18x18LI_c1_f3: rnc_house_base {
 		scope = 2;
 		displayName = "Apartment v2/18x18LI/C1/F3";
 		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c1_f3.p3d";
@@ -53,8 +49,8 @@ class CfgVehicles {
 		destrType = "DestructDefault";
 		armor = 1000;
 
-		numberOfWindows = 16;
-		numberOfDoors = 6;
+		numberOfWindows = 10;
+		numberOfDoors = 5;
 
 		class Hitpoints {
 			NORMAL_GLASS_HITPOINT(1,0.001,0.4)
@@ -67,12 +63,6 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(8,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(9,0.001,0.4)
 			NORMAL_GLASS_HITPOINT(10,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(11,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(12,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(13,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(14,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(15,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(16,0.001,0.4)
 		};
 
 		class Damage {
@@ -120,7 +110,6 @@ class CfgVehicles {
 			class door_3_source : door_1_source {};
 			class door_4_source : door_1_source {};
 			class door_5_source : door_1_source {};
-			class door_6_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -136,12 +125,6 @@ class CfgVehicles {
 			class glass_8_source : glass_1_source { hitpoint = "glass_8_hitpoint"; };
 			class glass_9_source : glass_1_source { hitpoint = "glass_9_hitpoint"; };
 			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
-			class glass_11_source : glass_1_source { hitpoint = "glass_11_hitpoint"; };
-			class glass_12_source : glass_1_source { hitpoint = "glass_12_hitpoint"; };
-			class glass_13_source : glass_1_source { hitpoint = "glass_13_hitpoint"; };
-			class glass_14_source : glass_1_source { hitpoint = "glass_14_hitpoint"; };
-			class glass_15_source : glass_1_source { hitpoint = "glass_15_hitpoint"; };
-			class glass_16_source : glass_1_source { hitpoint = "glass_16_hitpoint"; };
 		};
 
 		class UserActions {
@@ -164,42 +147,29 @@ class CfgVehicles {
 			};
 
 			class openDoor_2 : openDoor_1 {
-				displayName = "Open Left Door";
+				displayName = "STR_DN_OUT_O_DOOR";
 				position = Door_2_Trigger;
 				condition = (this animationPhase 'Door_2_rot') < 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen);
 			};
 			class closeDoor_2 : openDoor_1 {
-				displayName = "Close Left Door";
+				displayName = "STR_DN_OUT_C_DOOR";
 				position = Door_2_Trigger;
 				condition = (this animationPhase 'Door_2_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
 			
 			class openDoor_3 : openDoor_1 {
-				displayName = "Open Right Door";
+				displayName = "STR_DN_OUT_O_DOOR";
 				position = Door_3_Trigger;
 				condition = (this animationPhase 'Door_3_rot') < 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleOpen);
 			};
 			class closeDoor_3 : openDoor_1 {
-				displayName = "Close Right Door";
+				displayName = "STR_DN_OUT_C_DOOR";
 				position = Door_3_Trigger;
 				condition = (this animationPhase 'Door_3_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose);
-			};
-	
-			class openDoor_2_3 : openDoor_1 {
-				displayName = "Open Both Doors";
-				position = Door_2-3_Trigger;
-				condition = ((this animationPhase 'Door_2_rot') < 0.5) && ((this animationPhase 'Door_3_rot') < 0.5); // Checks if the door is currently open and not destroyed.
-				statement = "[this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleOpen; [this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleOpen;";
-			};
-			class closeDoor_2_3 : openDoor_1 {
-				displayName = "Close Both Doors";
-				position = Door_2-3_Trigger;
-				condition = ((this animationPhase 'Door_2_rot') >= 0.5 && ((this animationPhase 'Door_3_rot') >= 0.5)); // Checks if the door is currently open and not destroyed.
-				statement = "[this, 'Door_2_rot'] call BIS_fnc_DoorNoHandleClose; [this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose;";
 			};
 
 			class openDoor_4 : openDoor_1 {
@@ -227,68 +197,35 @@ class CfgVehicles {
 				condition = (this animationPhase 'Door_5_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_5_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
-
-			class openDoor_6 : openDoor_1 {
-				displayName = "$STR_DN_OUT_O_DOOR";
-				position = Door_6_Trigger;
-				condition = (this animationPhase 'Door_6_rot') < 0.5; // Checks if the door is currently open and not destroyed.
-				statement = ([this, 'Door_6_rot'] call BIS_fnc_DoorNoHandleOpen);
-			};
-			class closeDoor_6 : openDoor_1 {
-				displayName = "$STR_DN_OUT_C_DOOR";
-				position = Door_6_Trigger;
-				condition = (this animationPhase 'Door_6_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
-				statement = ([this, 'Door_6_rot'] call BIS_fnc_DoorNoHandleClose);
-			};
 		};
 		ActionBegin1 = openDoor_1;
 		ActionEnd1 = openDoor_1;
 
-		ActionBegin2 = openDoor_2_3;
-		ActionEnd2 = openDoor_2_3;
+		ActionBegin2 = openDoor_2;
+		ActionEnd2 = openDoor_2;
 		
-		ActionBegin3 = openDoor_4;
-		ActionEnd3 = openDoor_4;
+		ActionBegin3 = openDoor_3;
+		ActionEnd3 = openDoor_3;
 		
-		ActionBegin4 = openDoor_5;
-		ActionEnd4 = openDoor_5;
+		ActionBegin4 = openDoor_4;
+		ActionEnd4 = openDoor_4;
 		
-		ActionBegin5 = openDoor_6;
-		ActionEnd5 = openDoor_6;
+		ActionBegin5 = openDoor_5;
+		ActionEnd5 = openDoor_5;
 	};
 	
-	class Land_rnc_apt_v2_18x18LI_c1_f4: Land_rnc_apt_v2_18x18LI_c1_f3{
+	class Land_rnc_apt_v2_18x18LI_c1_f4: Land_rnc_apt_v2_18x18LI_c1_f3 {
 		displayName = "Apartment v2/18x18LI/C1/F4";
 		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c1_f4.p3d";
 	};
 
-	class Land_rnc_apt_v2_18x18LI_c1_f5: Land_rnc_apt_v2_18x18LI_c1_f3{
+	class Land_rnc_apt_v2_18x18LI_c1_f5: Land_rnc_apt_v2_18x18LI_c1_f3 {
 		displayName = "Apartment v2/18x18LI/C1/F5";
 		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c1_f5.p3d";
 	};
 
-	class Land_rnc_apt_v2_18x18LI_c1_f6: Land_rnc_apt_v2_18x18LI_c1_f3{
+	class Land_rnc_apt_v2_18x18LI_c1_f6: Land_rnc_apt_v2_18x18LI_c1_f3 {
 		displayName = "Apartment v2/18x18LI/C1/F6";
 		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c1_f6.p3d";
 	};
-	/*
-	class Land_rnc_apt_v2_18x18LI_c2_f3: Land_rnc_apt_v2_18x18LI_c1_f3{
-		displayName = "Apartment v2/18x18LI/C2/F3";
-		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c2_f3.p3d";
-	};
-	
-	class Land_rnc_apt_v2_18x18LI_c2_f4: Land_rnc_apt_v2_18x18LI_c1_f3{
-		displayName = "Apartment v2/18x18LI/C2/F4";
-		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c2_f4.p3d";
-	};
-	
-	class Land_rnc_apt_v2_18x18LI_c2_f5: Land_rnc_apt_v2_18x18LI_c1_f3{
-		displayName = "Apartment v2/18x18LI/C2/F5";
-		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c2_f5.p3d";
-	};
-	
-	class Land_rnc_apt_v2_18x18LI_c2_f6: Land_rnc_apt_v2_18x18LI_c1_f3{
-		displayName = "Apartment v2/18x18LI/C2/F6";
-		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c2_f6.p3d";
-	};*/
 };
