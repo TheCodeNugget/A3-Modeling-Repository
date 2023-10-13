@@ -92,7 +92,7 @@ class TexGen8 {
 };
 
 class Stage0 {
-	texture = "a3\structures_f_enoch\data\bricks\Bricks_Red_Horizontal_CO.paa"; // Bricks - 1024 x 1024 - 256
+	texture = "a3\structures_f_enoch\data\bricks\Bricks_Red_Horizontal_CO.paa"; // Bricks - 1024 x 1024 - 512
 	texGen = "0";
 };
 class Stage1 {
