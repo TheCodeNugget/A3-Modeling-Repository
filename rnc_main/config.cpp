@@ -103,4 +103,8 @@ class CfgEditorSubcategories {
 	class rnc_lamps {
 		displayName = "Lamps";
 	};
+	
+	class rnc_mapmaking {
+		displayName = "Terrain Makers Objects";
+	};
 };

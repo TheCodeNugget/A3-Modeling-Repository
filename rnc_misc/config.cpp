@@ -31,6 +31,56 @@ class CfgPatches {
 class CfgVehicles {
 	
 	class House_Small_F;
+	class Land_rnc_ruler_vertical: House_Small_F {
+		author = "RUMM & COKE Team";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.358;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		_generalMacro = "Land_rnc_ruler_vertical";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Ruler Vertical";
+		model = "rnc_misc\rnc_ruler_vertical.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "rnc_mapmaking";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_ruler_horizontal: House_Small_F {
+		author = "RUMM & COKE Team";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.358;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		_generalMacro = "Land_rnc_ruler_horizontal";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Ruler Horizontal";
+		model = "rnc_misc\rnc_ruler_horizontal.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "rnc_mapmaking";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
 	class Land_rnc_jacob: House_Small_F {
 		author = "RUMM & COKE Team";
 		mapSize = 6.1;
