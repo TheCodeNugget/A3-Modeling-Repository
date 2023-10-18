@@ -648,7 +648,7 @@ class CfgVehicles {
 		ActionEnd6 = openDoor_6;
 	};
 
-	class Land_rnc_apt_v2_18x18LI_c1_f6: Land_rnc_apt_v2_18x18LI_c1_f3 {
+	class Land_rnc_apt_v2_18x18LI_c1_f6: Land_rnc_apt_v2_18x18LI_c1_f4 {
 		displayName = "Apartment v2/18x18LI/C1/F6";
 		model = "rnc_apartments\variant2\18x18LI\rnc_apt_v2_18x18LI_c1_f6.p3d";
 	};
