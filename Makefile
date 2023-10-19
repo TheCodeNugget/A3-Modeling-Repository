@@ -41,6 +41,9 @@ american:
 
 mehland:
 	pboproject -P P:\mehland $(mehout)
+	
+mehobj:
+	pboproject -P P:\mehland_objects $(mehout)
 
 sehreno:
 	pboproject -P P:\Sehreno $(sehout)
