@@ -37,3 +37,7 @@
 
 # Backups
 *.blend1
+
+# Texturing Saves
+*.spp
+*.tbscene
