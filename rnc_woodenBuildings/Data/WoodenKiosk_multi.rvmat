@@ -96,7 +96,7 @@ class Stage0 {
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_enoch\data\bricks\cihla_dark_co.paa";
+	texture = "a3\structures_f_enoch\data\bricks\Bricks_broken_dirt_04_CO.paa"; // Ground Bricks - 1024 x 1024 - 512
 	texGen = "1";
 };
 class Stage2 {
@@ -140,7 +140,7 @@ class Stage11 {
 	texGen = "0";
 };
 class Stage12 {
-	texture = "a3\structures_f_enoch\data\bricks\cihla_dark_nohq.paa";
+	texture = "a3\structures_f_enoch\data\bricks\Bricks_broken_dirt_04_NOHQ.paa";
 	texGen = "1";
 };
 class Stage13 {
