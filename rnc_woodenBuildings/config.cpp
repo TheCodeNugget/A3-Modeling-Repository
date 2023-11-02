@@ -197,20 +197,22 @@ class CfgVehicles {
 
 		editorCategory = "rnc_euObjects";
 		editorSubcategory = "rnc_woodBuildings";
-		mapSize = 20.27; // Scale of icon in editor
+		
+		icon = "iconObject_1x2";
+		mapSize = 4.5; // Scale of icon in editor
 		cost = 40000; // Score penalty for destroying the house
 		
 		destrType = "DestructDefault";
 		armor = 1000;
 		
-		numberOfWindows = 11;
+		numberOfWindows = 13;
 		
 		class HitPoints { // Entities representing destructible subparts of the house
 
 			// Glass Hitpoints
-			NORMAL_GLASS_HITPOINT(1,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(2,0.001,0.4)
-			NORMAL_GLASS_HITPOINT(3,0.001,0.4)
+			NORMAL_GLASS_HITPOINT(1,0.001,0.1)
+			NORMAL_GLASS_HITPOINT(2,0.001,0.1)
+			NORMAL_GLASS_HITPOINT(3,0.001,0.1)
 			NORMAL_GLASS_HITPOINT(4,0.001,0.1)
 			NORMAL_GLASS_HITPOINT(5,0.001,0.1)
 			NORMAL_GLASS_HITPOINT(6,0.001,0.1)
@@ -224,7 +226,6 @@ class CfgVehicles {
 		};
 		
 		class Damage {
-			// Texture pairs (below 0.5 health and 0.5+) for switching visuals (can also use generated)
 			tex[] = {
 				// Window textures
 				"A3\Structures_F\Data\Windows\window_set_CA.paa",
@@ -251,7 +252,6 @@ class CfgVehicles {
 				"#(argb,8,8,3)color(0.701961,0,0,1.0,co)"
 			};
 
-			// Unlike textures, materials are not in pairs but in triplets (health: 0 - 0.49, 0.5 - 0.99, 1)
 			mat[] = {
 				"A3\Structures_F\Data\Windows\window_set.rvmat",
 				"A3\Structures_F\Data\Windows\destruct_half_window_set.rvmat",
