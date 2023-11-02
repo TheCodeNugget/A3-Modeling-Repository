@@ -50,7 +50,7 @@ class CfgVehicles {
 		model = "rnc_misc\streetlamp\rnc_street_lamp_01_black.p3d";
 		icon = "iconObject_5x2";
 		editorCategory = "rnc_miscObjects";
-		editorSubcategory = "rnc_mapmaking";
+		editorSubcategory = "rnc_lamps";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
 		keepHorizontalPlacement = 0;
@@ -70,6 +70,27 @@ class CfgVehicles {
 		_generalMacro = "Land_rnc_street_lamp_01_gray_off";
 		displayName = "Street Lamp Gray (Off)";
 		model = "rnc_misc\streetlamp\rnc_street_lamp_01_gray.p3d";
+	};
+	
+	class Land_rnc_street_lamp_02_black_off: Land_rnc_street_lamp_01_black_off {
+		_generalMacro = "Land_rnc_street_lamp_02_black_off";
+		displayName = "Wall Lamp Black (Off)";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_black.p3d";
+	};
+	class Land_rnc_street_lamp_02_green_off: Land_rnc_street_lamp_01_black_off {
+		_generalMacro = "Land_rnc_street_lamp_02_green_off";
+		displayName = "Wall Lamp Green (Off)";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_green.p3d";
+	};
+	class Land_rnc_street_lamp_02_blue_off: Land_rnc_street_lamp_01_black_off {
+		_generalMacro = "Land_rnc_street_lamp_02_blue_off";
+		displayName = "Wall Lamp Blue (Off)";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_blue.p3d";
+	};
+	class Land_rnc_street_lamp_02_gray_off: Land_rnc_street_lamp_01_black_off {
+		_generalMacro = "Land_rnc_street_lamp_02_gray_off";
+		displayName = "Wall Lamp Gray (Off)";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_gray.p3d";
 	};
 	
 	class Land_rnc_street_lamp_01_black: Lamps_base_F {
@@ -143,29 +164,24 @@ class CfgVehicles {
 		model = "rnc_misc\streetlamp\rnc_street_lamp_01_gray.p3d";
 	};
 	
-	class Land_rnc_streetlamp_02_black_off: Lamps_base_F {
-		author = "RUMM & COKE Team";
-		mapSize = 1,3;
-		class SimpleObject {
-			eden = 0;
-			animate[] = {};
-			hide[] = {};
-			verticalOffset = 1.358;
-			verticalOffsetWorld = 0;
-			init = "''";
-		};
-		editorPreview = "";
-		_generalMacro = "Land_rnc_street_lamp_01_black_off";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Street Lamp wall (Off)";
-		model = "rnc_misc\streetlamp\rnc_street_lamp_02.p3d";
-		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
-		editorSubcategory = "rnc_lamps";
-		vehicleClass = "Structures_Industrial";
-		cost = 2000;
-		keepHorizontalPlacement = 0;
-		armor = 400;
+	class Land_rnc_street_lamp_02_black: Land_rnc_street_lamp_01_black {
+		_generalMacro = "Land_rnc_street_lamp_02_black";
+		displayName = "Wall Lamp Black";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_black.p3d";
+	};
+	class Land_rnc_street_lamp_02_green: Land_rnc_street_lamp_01_black {
+		_generalMacro = "Land_rnc_street_lamp_02_green";
+		displayName = "Wall Lamp Green";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_green.p3d";
+	};
+	class Land_rnc_street_lamp_02_blue: Land_rnc_street_lamp_01_black {
+		_generalMacro = "Land_rnc_street_lamp_02_blue";
+		displayName = "Wall Lamp Blue";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_blue.p3d";
+	};
+	class Land_rnc_street_lamp_02_gray: Land_rnc_street_lamp_01_black {
+		_generalMacro = "Land_rnc_street_lamp_02_gray";
+		displayName = "Wall Lamp Gray";
+		model = "rnc_misc\streetlamp\rnc_street_lamp_02_gray.p3d";
 	};
 };
