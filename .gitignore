@@ -6,6 +6,8 @@
 *.lo
 *.o
 *.obj
+*.p3d
+*.fbx
 
 # Precompiled Headers
 *.gch
@@ -34,6 +36,8 @@
 # Imagery
 *.paa
 *.png
+*.jpg
+*.tif
 
 # Backups
 *.blend1
@@ -41,3 +45,4 @@
 # Texturing Saves
 *.spp
 *.tbscene
+*.assbin
