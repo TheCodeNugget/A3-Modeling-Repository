@@ -61,11 +61,15 @@ class CfgEditorCategories {
 	class rnc_ponds { // Category class, you point to it in editorCategory property
 		displayName = "Ponds (R&C)"; // Name visible in the list
 	};
+	
+	class rnc_decorations { // Category class, you point to it in editorCategory property
+		displayName = "Decorations (R&C)"; // Name visible in the list
+	};
 };
 
 class CfgEditorSubcategories {
-	class rnc_oosters { // Category class, you point to it in editorSubcategory property
-		displayName = "Posters"; // Name visible in the list
+	class rnc_buntings { // Category class, you point to it in editorSubcategory property
+		displayName = "Buntings"; // Name visible in the list
 	};
 	
 	class rnc_signs { // Category class, you point to it in editorSubcategory property
