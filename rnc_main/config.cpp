@@ -68,8 +68,11 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-	class rnc_buntings { // Category class, you point to it in editorSubcategory property
-		displayName = "Buntings"; // Name visible in the list
+	class rnc_buntings_long { // Category class, you point to it in editorSubcategory property
+		displayName = "Buntings (Long)"; // Name visible in the list
+	};
+	class rnc_buntings_short { // Category class, you point to it in editorSubcategory property
+		displayName = "Buntings (Short)"; // Name visible in the list
 	};
 	
 	class rnc_signs { // Category class, you point to it in editorSubcategory property
