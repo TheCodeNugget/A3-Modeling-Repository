@@ -75,6 +75,10 @@ class CfgEditorSubcategories {
 		displayName = "Buntings (Short)"; // Name visible in the list
 	};
 	
+	class rnc_fortress { // Category class, you point to it in editorSubcategory property
+		displayName = "Fortress"; // Name visible in the list
+	};
+	
 	class rnc_signs { // Category class, you point to it in editorSubcategory property
 		displayName = "Signs"; // Name visible in the list
 	};
