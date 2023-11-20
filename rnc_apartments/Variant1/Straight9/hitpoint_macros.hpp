@@ -30,4 +30,4 @@
 					class BrokenGlass6S: BrokenGlass1 { type = "BrokenGlass6S_0900_0950"; }; \
 					class BrokenGlass7S: BrokenGlass1 { type = "BrokenGlass7S_0900_0950"; }; \
 				}; \
-			};
+			}
