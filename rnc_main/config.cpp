@@ -32,6 +32,7 @@ class CfgFunctions {
 		class functions {
 			file = "\rnc_main\functions";
 			class house_snap{};
+			class fortress_snap{};
 		};
 	};
 };

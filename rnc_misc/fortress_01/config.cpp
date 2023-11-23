@@ -30,8 +30,10 @@ class CfgPatches {
 };
 class CfgVehicles {
 	
-	class House_F;
-	class rnc_fort_base: House_F {
+	class House_F{
+		class Eventhandlers;
+	};
+	class rnc_fortress_base: House_F {
 		author = "RUMM & COKE Team";
 		mapSize = 10;
 		class SimpleObject {
@@ -51,163 +53,167 @@ class CfgVehicles {
 		vehicleClass = "Structures_Cultural";
 		destrType = "DestructNo";
 		class DestructionEffects{};
+		class EventHandlers: EventHandlers{
+			dragged3DEN = "_this call rnc_fnc_fortress_snap;";
+			registeredToWorld3DEN = "_this call rnc_fnc_fortress_snap;";
+		};
 	};
 	
-	class Land_rnc_fort_01 : rnc_fort_base {
+	class Land_rnc_fort_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Fortress";
 		model = "rnc_misc\fortress_01\rnc_fort_01.p3d";
 	};
 	
-	class Land_rnc_fort_tower_round : rnc_fort_base {
+	class Land_rnc_fort_tower_round : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Tower Round";
 		model = "rnc_misc\fortress_01\rnc_fort_tower_round.p3d";
 	};
 	
-	class Land_rnc_fort_wall_stairs_straight_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_stairs_straight_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Stairs Straight 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_stairs_straight_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_corner_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_corner_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick Corner 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_corner_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_corner_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_corner_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick Corner 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_corner_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_end_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_end_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick End 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_end_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_end_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_end_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick End 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_end_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_straight_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_straight_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick Straight 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_straight_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_straight_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_straight_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick Straight 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_straight_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thick_thin_transition_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thick_thin_transition_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thick to Thin Transition 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thick_thin_transition_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_corner_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_corner_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Corner 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_corner_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_corner_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_corner_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Corner 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_corner_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_corner_03 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_corner_03 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Corner 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_corner_03.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_gate_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_gate_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Gate 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_gate_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_straight_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_straight_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Straight 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_straight_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_straight_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_straight_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Straight 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_straight_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_straight_03 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_straight_03 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Straight 03";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_straight_03.p3d";
 	};
 	
-	class Land_rnc_fort_wall_thin_straight_04 : rnc_fort_base {
+	class Land_rnc_fort_wall_thin_straight_04 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Thin Straight 04";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_thin_straight_04.p3d";
 	};
 	
-	class Land_rnc_fort_wall_walkway_corner_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_walkway_corner_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Walkway Corner 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_walkway_corner_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_walkway_corner_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_walkway_corner_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Walkway Corner 02";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_walkway_corner_02.p3d";
 	};
 	
-	class Land_rnc_fort_wall_walkway_end_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_walkway_end_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Walkway End 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_walkway_end_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_walkway_straight_01 : rnc_fort_base {
+	class Land_rnc_fort_wall_walkway_straight_01 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Walkway Straight 01";
 		model = "rnc_misc\fortress_01\rnc_fort_wall_walkway_straight_01.p3d";
 	};
 	
-	class Land_rnc_fort_wall_walkway_straight_02 : rnc_fort_base {
+	class Land_rnc_fort_wall_walkway_straight_02 : rnc_fortress_base {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Wall Walkway Straight 02";
