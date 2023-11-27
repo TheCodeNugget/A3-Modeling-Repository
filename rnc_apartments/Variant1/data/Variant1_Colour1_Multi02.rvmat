@@ -93,19 +93,19 @@ class TexGen8 {
 };
 
 class Stage0 {
-	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_co.paa"; // Dark Wood - 1024 x 1024 - 128
+	texture = "rnc_main\wall\cinderWall_beigeAndBlack_co.paa"; // Cinderblock - 1024 x 1024 - 128
 	texGen = "0";
 };
 class Stage1 {
-	texture = "a3\structures_f_enoch\data\wallpapers\wallpaper_creme_co.paa"; // Wallpaper - 1024 x 1024 - 128
+	texture = "rnc_main\wall\Wallpaper_01_co.paa"; // Wallpaper - 1024 x 1024 - 128
 	texGen = "1";
 };
 class Stage2 {
-	texture = "a3\structures_f_enoch\data\plaster\plasterwhite_old_co.paa"; // White Plaster - 1024 x 1024 - 128
+	texture = "rnc_main\tile\bitumenTile01_co.paa"; // Roof Bitumen - 1024 x 1024 - 128
 	texGen = "2";
 };
 class Stage3 {
-	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_CO.paa"; // Rusty Metal - 2048 x 2048 - 1024
+	texture = "a3\structures_f_enoch\data\bricks\Ceramic\BrickSmallDark_co.paa"; // Trim Bricks - 2048 x 2048 - 1024
 	texGen = "3";
 };
 class Stage4 {
@@ -125,7 +125,7 @@ class Stage7 {
 	texGen = 7;
 };
 class Stage8 {
-	texture = "#(argb,8,8,3)color(0.5,0,1,1,DTSMDI)";
+	texture = "a3\structures_f_enoch\data\bricks\Ceramic\BrickSmallDark_smdi.paa";
 	texGen = 3;
 };
 class Stage9 {
@@ -137,18 +137,18 @@ class Stage10 {
 	texGen = "4";
 };
 class Stage11 {
-	texture = "a3\structures_f_enoch\data\wood\wall\woodwall_dark_nohq.paa";
+	texture = "rnc_main\wall\cinderWall_beigeAndBlack_co.paa";
 	texGen = "0";
 };
 class Stage12 {
-	texture = "a3\structures_f_enoch\data\wallpapers\wallpaper_creme_nohq.paa";
+	texture = "rnc_main\wall\Wallpaper_01_co.paa";
 	texGen = "1";
 };
 class Stage13 {
-	texture = "#(argb,8,8,3)color(0.5,0.5,1,1,NOHQ)";
+	texture = "rnc_main\tile\bitumenTile01_nohq.paa";
 	texGen = "2";
 };
 class Stage14 {
-	texture = "a3\structures_f_enoch\data\metal\metal_grey_rusty_nohq.paa";
+	texture = "a3\structures_f_enoch\data\bricks\Ceramic\BrickSmallDark_nohq.paa";
 	texGen = "3";
 };
