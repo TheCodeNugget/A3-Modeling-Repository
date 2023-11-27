@@ -66,6 +66,10 @@ class CfgEditorCategories {
 	class rnc_decorations { // Category class, you point to it in editorCategory property
 		displayName = "Decorations (R&C)"; // Name visible in the list
 	};
+	
+	class rnc_environment { // Category class, you point to it in editorCategory property
+		displayName = "Environment (R&C)"; // Name visible in the list
+	};
 };
 
 class CfgEditorSubcategories {
@@ -118,5 +122,9 @@ class CfgEditorSubcategories {
 	
 	class rnc_mapmaking {
 		displayName = "Terrain Makers Objects";
+	};
+	
+	class rnc_cliffs {
+		displayName = "Cliffs";
 	};
 };
