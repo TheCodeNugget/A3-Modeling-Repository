@@ -56,6 +56,30 @@ class CfgVehicles
 		accuracy = 1000;
 	};
 	
+	class Land_rnc_coastal_cliff_02: Rocks_base_F
+	{
+		author = "$STR_A3_Bohemia_Interactive";
+		mapSize = 12.99;
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 2.513;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_BluntRock_apart.jpg";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Coastal Cliff 02";
+		model = "rnc_environment\coastal_cliffs\rnc_coastal_cliff_02.p3d";
+		icon = "iconObject_circle";
+		editorCategory = "rnc_environment";
+		editorSubcategory = "rnc_cliffs";
+		accuracy = 1000;
+	};
+	
 	class Land_rnc_coastal_cliff_03: Rocks_base_F
 	{
 		author = "$STR_A3_Bohemia_Interactive";
