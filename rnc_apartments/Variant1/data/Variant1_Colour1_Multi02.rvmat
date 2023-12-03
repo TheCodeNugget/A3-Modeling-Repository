@@ -141,7 +141,7 @@ class Stage11 {
 	texGen = "0";
 };
 class Stage12 {
-	texture="#(rgba,8,8,3)color(0.5,0.5,1,1)";
+	texture = "#(argb,8,8,3)color(0.5,0.5,1,1,nohq)";
 	texGen = "1";
 };
 class Stage13 {
