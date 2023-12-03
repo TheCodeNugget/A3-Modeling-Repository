@@ -123,8 +123,4 @@ class CfgEditorSubcategories {
 	class rnc_mapmaking {
 		displayName = "Terrain Makers Objects";
 	};
-	
-	class rnc_cliffs {
-		displayName = "Cliffs";
-	};
 };
