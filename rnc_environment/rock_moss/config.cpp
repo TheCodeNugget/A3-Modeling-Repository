@@ -99,4 +99,67 @@ class CfgVehicles
 		editorCategory = "rnc_environment";
 		icon = "iconObject_circle";
 	};
+	
+	class Land_rnc_rock_moss_07: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 07";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_07.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_08: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 08";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_08.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_09: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 09";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_09.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_10: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 10";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_10.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_11: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 11";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_11.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_12: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 12";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_12.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
+	
+	class Land_rnc_rock_moss_13: Rocks_base_F
+	{
+		scope = 2;
+		displayName = "Mossy Rock 13";
+		model = "rnc_environment\rock_moss\rnc_rock_moss_13.p3d";
+		editorCategory = "rnc_environment";
+		icon = "iconObject_circle";
+	};
 };
