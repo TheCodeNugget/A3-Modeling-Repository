@@ -178,4 +178,9 @@ class CfgVehicles {
 		cost = 2000;
 		keepHorizontalPlacement = 0;
 	};
+	
+	class Land_rnc_rubber_duck_smol: Land_rnc_rubber_duck {
+		displayName = "Rubber Duck Smol";
+		model = "rnc_misc\rnc_rubber_duck_smol.p3d";
+	};
 };
