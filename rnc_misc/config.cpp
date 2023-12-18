@@ -106,6 +106,11 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
+	class Land_rnc_jacob_smol: Land_rnc_jacob {
+		displayName = "Jacob Smol";
+		model = "rnc_misc\rnc_Jacob_smol.p3d";
+	};
+	
 	class Land_rnc_container_trailer: House_Small_F {
 		author = "RUMM & COKE Team";
 		mapSize = 6.1;
