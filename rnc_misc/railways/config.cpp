@@ -48,7 +48,7 @@ class CfgVehicles {
 		model = "rnc_misc\railways\rnc_diesel_locomotive_01.p3d";
 		icon = "iconObject_5x2";
 		editorCategory = "rnc_miscObjects";
-		editorSubcategory = "rnc_mapmaking";
+		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
 		keepHorizontalPlacement = 0;
@@ -71,7 +71,53 @@ class CfgVehicles {
 		model = "rnc_misc\railways\rnc_diesel_locomotive_02.p3d";
 		icon = "iconObject_5x2";
 		editorCategory = "rnc_miscObjects";
-		editorSubcategory = "rnc_mapmaking";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_passenger_wagon_01: ThingX {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Passenger Wagon 01";
+		model = "rnc_misc\railways\rnc_passenger_wagon_01.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_passenger_wagon_02: ThingX {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Passenger Wagon 02";
+		model = "rnc_misc\railways\rnc_passenger_wagon_02.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
 		keepHorizontalPlacement = 0;
