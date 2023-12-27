@@ -260,4 +260,73 @@ class CfgVehicles {
 		cost = 2000;
 		keepHorizontalPlacement = 0;
 	};
+	
+	class Land_rnc_hay_wagon: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Hay Wagon";
+		model = "rnc_misc\railways\rnc_hay_wagon.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_ore_wagon: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Ore Wagon";
+		model = "rnc_misc\railways\rnc_ore_wagon.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_gravel_wagon: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Gravel Wagon";
+		model = "rnc_misc\railways\rnc_Gravel_wagon.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
 };
