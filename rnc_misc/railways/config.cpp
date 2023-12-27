@@ -30,8 +30,8 @@ class CfgPatches {
 };
 class CfgVehicles {
 	
-	class ThingX;
-	class Land_rnc_diesel_locomotive_01: ThingX {
+	class House_F;
+	class Land_rnc_diesel_locomotive_01: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -54,7 +54,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_diesel_locomotive_02: ThingX {
+	class Land_rnc_diesel_locomotive_02: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -77,7 +77,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_passenger_wagon_01: ThingX {
+	class Land_rnc_passenger_wagon_01: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -100,7 +100,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_passenger_wagon_02: ThingX {
+	class Land_rnc_passenger_wagon_02: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -123,7 +123,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_hispeed_locomotive_01: ThingX {
+	class Land_rnc_hispeed_locomotive_01: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -146,7 +146,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_hispeed_locomotive_02: ThingX {
+	class Land_rnc_hispeed_locomotive_02: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -169,7 +169,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_hispeed_wagon_01: ThingX {
+	class Land_rnc_hispeed_wagon_01: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -192,7 +192,7 @@ class CfgVehicles {
 		keepHorizontalPlacement = 0;
 	};
 	
-	class Land_rnc_hispeed_wagon_02: ThingX {
+	class Land_rnc_hispeed_wagon_02: House_F {
 		author = "RUMM & COKE Team / Quaternius";
 		mapSize = 6.1;
 		class SimpleObject {
@@ -207,6 +207,52 @@ class CfgVehicles {
 		scope = 2;
 		displayName = "Hi-Speed Wagon 02";
 		model = "rnc_misc\railways\rnc_hispeed_wagon_02.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_container_wagon: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Container Wagon";
+		model = "rnc_misc\railways\rnc_container_wagon.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_log_wagon: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Log Wagon";
+		model = "rnc_misc\railways\rnc_log_wagon.p3d";
 		icon = "iconObject_5x2";
 		editorCategory = "rnc_miscObjects";
 		editorSubcategory = "EdSubcat_Trains";
