@@ -9,9 +9,9 @@ VertexShaderID	= "Multi";
 // BLACK - Cinderblock - 1024 x 1024 - 128
 class TexGen0 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
 class TexGen5 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
-class Stage0	{texture="rnc_main\wall\cinderWall_beigeAndBlack_co.paa";						texGen="0";};
+class Stage0	{texture="rnc_main\wall\brickwall_02_co.paa";									texGen="0";};
 class Stage5	{texture="#(argb,8,8,3)color(0.5,0,1,1,DTSMDI)";								texGen="5";};
-class Stage11	{texture="rnc_main\wall\cinderWall_beigeAndBlack_nohq.paa";						texGen="0";};
+class Stage11	{texture="rnc_main\wall\brickwall_02_nohq.paa";									texGen="0";};
 // RED - Wallpaper - 1024 x 1024 - 128
 class TexGen1 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
 class TexGen6 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
@@ -21,9 +21,9 @@ class Stage12	{texture="#(argb,8,8,3)color(0.5,0.5,1,1,NOHQ)";								texGen="1"
 // GREEN - Roof Bitumen - 1024 x 1024 - 128
 class TexGen2 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
 class TexGen7 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
-class Stage2	{texture="rnc_main\tile\bitumenTile01_co.paa";									texGen="2";};
+class Stage2	{texture="rnc_main\tile\bitumenTile_blue_co.paa";									texGen="2";};
 class Stage7	{texture="#(argb,8,8,3)color(0.5,0,1,1,DTSMDI)";								texGen="7";};
-class Stage13	{texture="rnc_main\tile\bitumenTile01_nohq.paa";								texGen="2";};
+class Stage13	{texture="rnc_main\tile\bitumenTile_blue_nohq.paa";								texGen="2";};
 // BLUE - Trim Bricks - 2048 x 2048 - 1024
 class TexGen3 	{uvSource="tex";	class uvTransform{aside[]={1,0,0};	up[]={0,1,0};	dir[]={0,0,1};	pos[]={0,0,0};};};
 class Stage3	{texture="a3\structures_f_enoch\data\bricks\Ceramic\BrickSmallDark_co.paa";		texGen="3";};
