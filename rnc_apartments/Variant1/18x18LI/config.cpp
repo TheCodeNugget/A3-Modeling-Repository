@@ -49,20 +49,34 @@ class CfgVehicles {
 		destrType = "DestructDefault";
 		armor = 1000;
 
-		numberOfWindows = 14;
-		numberOfDoors = 2;
+		numberOfWindows = 24;
+		numberOfDoors = 8;
 
 		class Hitpoints {
-			NORMAL_GLASS_HITPOINT(1,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(2,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(3,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(4,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(5,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(6,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(7,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(8,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(9,0.001,0.4);
-			NORMAL_GLASS_HITPOINT(10,0.001,0.4);
+			NORMAL_GLASS_HITPOINT(1,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(2,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(3,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(4,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(5,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(6,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(7,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(8,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(9,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(10,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(11,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(12,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(13,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(14,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(15,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(16,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(17,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(18,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(19,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(20,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(21,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(22,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(23,0.001,0.1);
+			NORMAL_GLASS_HITPOINT(24,0.001,0.1);
 		};
 
 		class Damage {
@@ -108,6 +122,11 @@ class CfgVehicles {
 			};
 			class door_2_source : door_1_source {};
 			class door_3_source : door_1_source {};
+			class door_4_source : door_1_source {};
+			class door_5_source : door_1_source {};
+			class door_6_source : door_1_source {};
+			class door_7_source : door_1_source {};
+			class door_8_source : door_1_source {};
 
 			class glass_1_source {
 				source = "Hit";
@@ -123,6 +142,20 @@ class CfgVehicles {
 			class glass_8_source : glass_1_source { hitpoint = "glass_8_hitpoint"; };
 			class glass_9_source : glass_1_source { hitpoint = "glass_9_hitpoint"; };
 			class glass_10_source : glass_1_source { hitpoint = "glass_10_hitpoint"; };
+			class glass_11_source : glass_1_source { hitpoint = "glass_11_hitpoint"; };
+			class glass_12_source : glass_1_source { hitpoint = "glass_12_hitpoint"; };
+			class glass_13_source : glass_1_source { hitpoint = "glass_13_hitpoint"; };
+			class glass_14_source : glass_1_source { hitpoint = "glass_14_hitpoint"; };
+			class glass_15_source : glass_1_source { hitpoint = "glass_15_hitpoint"; };
+			class glass_16_source : glass_1_source { hitpoint = "glass_16_hitpoint"; };
+			class glass_17_source : glass_1_source { hitpoint = "glass_17_hitpoint"; };
+			class glass_18_source : glass_1_source { hitpoint = "glass_18_hitpoint"; };
+			class glass_19_source : glass_1_source { hitpoint = "glass_19_hitpoint"; };
+			class glass_20_source : glass_1_source { hitpoint = "glass_20_hitpoint"; };
+			class glass_21_source : glass_1_source { hitpoint = "glass_21_hitpoint"; };
+			class glass_22_source : glass_1_source { hitpoint = "glass_22_hitpoint"; };
+			class glass_23_source : glass_1_source { hitpoint = "glass_23_hitpoint"; };
+			class glass_24_source : glass_1_source { hitpoint = "glass_24_hitpoint"; };
 		};
 		
 		class UserActions {
@@ -165,6 +198,61 @@ class CfgVehicles {
 				condition = (this animationPhase 'Door_3_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
 				statement = ([this, 'Door_3_rot'] call BIS_fnc_DoorNoHandleClose);
 			};
+			
+			class openDoor_4 : openDoor_1 {
+				position = Door_4_Trigger;
+				condition = (this animationPhase 'Door_4_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_4_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_4 : closeDoor_1 {
+				position = Door_4_Trigger;
+				condition = (this animationPhase 'Door_4_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_4_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_5 : openDoor_1 {
+				position = Door_5_Trigger;
+				condition = (this animationPhase 'Door_5_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_5_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_5 : closeDoor_1 {
+				position = Door_5_Trigger;
+				condition = (this animationPhase 'Door_5_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_5_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_6 : openDoor_1 {
+				position = Door_6_Trigger;
+				condition = (this animationPhase 'Door_6_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_6_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_6 : closeDoor_1 {
+				position = Door_6_Trigger;
+				condition = (this animationPhase 'Door_6_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_6_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_7 : openDoor_1 {
+				position = Door_7_Trigger;
+				condition = (this animationPhase 'Door_7_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_7_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_7 : closeDoor_1 {
+				position = Door_7_Trigger;
+				condition = (this animationPhase 'Door_7_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_7_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
+			
+			class openDoor_8 : openDoor_1 {
+				position = Door_8_Trigger;
+				condition = (this animationPhase 'Door_8_rot') < 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_8_rot'] call BIS_fnc_DoorNoHandleOpen);
+			};
+			class closeDoor_8 : closeDoor_1 {
+				position = Door_8_Trigger;
+				condition = (this animationPhase 'Door_8_rot') >= 0.5; // Checks if the door is currently open and not destroyed.
+				statement = ([this, 'Door_8_rot'] call BIS_fnc_DoorNoHandleClose);
+			};
 		};
 		// Here are references binding specific positions in Path lod in p3d to specific actions from "class UserActions" for AI to know when to use which doors. The actionBegin# and ActionEnd# is a hardcoded naming system.
 		ActionBegin1 = openDoor_1;
@@ -173,6 +261,16 @@ class CfgVehicles {
 		ActionEnd2 = openDoor_2;
 		ActionBegin3 = openDoor_3;
 		ActionEnd3 = openDoor_3;
+		ActionBegin4 = openDoor_4;
+		ActionEnd4 = openDoor_4;
+		ActionBegin5 = openDoor_5;
+		ActionEnd5 = openDoor_5;
+		ActionBegin6 = openDoor_6;
+		ActionEnd6 = openDoor_6;
+		ActionBegin7 = openDoor_7;
+		ActionEnd7 = openDoor_7;
+		ActionBegin8 = openDoor_8;
+		ActionEnd8 = openDoor_8;
 	};
 
 	class Land_rnc_apt_v1_18x18LI_c1_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
@@ -188,5 +286,25 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_18x18LI_c1_f6: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F6";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f6.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f3: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F3";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f3.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F4";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f4.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f5: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F5";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f5.p3d";
+	};
+	
+	class Land_rnc_apt_v1_18x18LI_c2_f6: Land_rnc_apt_v1_18x18LI_c1_f3{
+		displayName = "Apartment V1/18x18LI/C2/F6";
+		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c2_f6.p3d";
 	};
 };
