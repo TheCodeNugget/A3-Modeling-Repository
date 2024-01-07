@@ -43,7 +43,7 @@ for "_i" from 1 to 2 do
 	_snapPoint = _nearestObject modelToWorldVisual (_nearestObject selectionPosition format["snap_%1",_i]);
 	{
 		// Continue if snap points are found
-		if (_snapPoint distance _x <= 1) exitWith
+		if (_snapPoint distance _x <= 2) exitWith
 		{
 			// Reconvert to model space due to dir change
 			_posModel = _object worldToModel _x;
