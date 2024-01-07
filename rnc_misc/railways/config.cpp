@@ -329,4 +329,27 @@ class CfgVehicles {
 		cost = 2000;
 		keepHorizontalPlacement = 0;
 	};
+	
+	class Land_rnc_rail_tunnel: House_F {
+		author = "RUMM & COKE Team";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Rail Tunnel";
+		model = "rnc_misc\railways\rnc_rail_tunnel.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Trains";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
 };
