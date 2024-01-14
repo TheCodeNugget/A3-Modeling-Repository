@@ -31,12 +31,75 @@ class CfgPatches {
 class CfgVehicles {
 	class House_Small_F;
 
-	class Land_rnc_multistory03_overlay: House_Small_F {
+	class Land_rnc_multistory03_overlay_v1: House_Small_F {
 		scope = 2;
 		mapSize = 34.4;
-		displayName = "Apartment Tower Overlay";
+		displayName = "Apartment Tower Overlay V1";
 		icon = "iconObject_1x2";
-		model = "rnc_misc\vanilla_overlays\rnc_multistory03_overlay.p3d";
+		model = "rnc_misc\vanilla_overlays\rnc_multistory03_overlay_v1.p3d";
+
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 25.907;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+	
+		editorCategory = "rnc_apartments";
+		//editorSubCategory = "rnc_city";
+	};
+	
+	class Land_rnc_multistory03_overlay_v2: House_Small_F {
+		scope = 2;
+		mapSize = 34.4;
+		displayName = "Apartment Tower Overlay V2";
+		icon = "iconObject_1x2";
+		model = "rnc_misc\vanilla_overlays\rnc_multistory03_overlay_v2.p3d";
+
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 25.907;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+	
+		editorCategory = "rnc_apartments";
+		//editorSubCategory = "rnc_city";
+	};
+	
+	class Land_rnc_multistory03_overlay_v3: House_Small_F {
+		scope = 2;
+		mapSize = 34.4;
+		displayName = "Apartment Tower Overlay V3";
+		icon = "iconObject_1x2";
+		model = "rnc_misc\vanilla_overlays\rnc_multistory03_overlay_v3.p3d";
+
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 25.907;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+	
+		editorCategory = "rnc_apartments";
+		//editorSubCategory = "rnc_city";
+	};
+	
+	class Land_rnc_multistory03_overlay_v4: House_Small_F {
+		scope = 2;
+		mapSize = 34.4;
+		displayName = "Apartment Tower Overlay V4";
+		icon = "iconObject_1x2";
+		model = "rnc_misc\vanilla_overlays\rnc_multistory03_overlay_v4.p3d";
 
 		class SimpleObject
 		{
