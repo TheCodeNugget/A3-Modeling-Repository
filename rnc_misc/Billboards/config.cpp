@@ -93,4 +93,25 @@ class CfgVehicles {
 		editorCategory = "rnc_miscObjects";
 		editorSubcategory = "EdSubcat_Services";
 	};
+	
+	class Land_rnc_bb01_tbland: House_Small_F {
+		scope = 2;
+		mapSize = 34.4;
+		displayName = "TB Landscaping BB01";
+		icon = "iconObject_1x2";
+		model = "rnc_misc\Billboards\rnc_bb01_tbland.p3d";
+
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 25.907;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+	
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Services";
+	};
 };
