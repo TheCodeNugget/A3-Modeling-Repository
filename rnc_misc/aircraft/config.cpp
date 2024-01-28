@@ -122,4 +122,27 @@ class CfgVehicles {
 		cost = 2000;
 		keepHorizontalPlacement = 0;
 	};
+	
+	class Land_passjet_blank: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Passenger Plane Blank";
+		model = "rnc_misc\aircraft\rnc_pass_jet\rnc_passjet_blank.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_miscObjects";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
 };
