@@ -47,7 +47,7 @@ class CfgVehicles {
 		displayName = "Diesel Locomotive 01";
 		model = "rnc_misc\railways\rnc_diesel_locomotive_01.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -70,7 +70,7 @@ class CfgVehicles {
 		displayName = "Diesel Locomotive 02";
 		model = "rnc_misc\railways\rnc_diesel_locomotive_02.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -93,7 +93,7 @@ class CfgVehicles {
 		displayName = "Passenger Wagon 01";
 		model = "rnc_misc\railways\rnc_passenger_wagon_01.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -116,7 +116,7 @@ class CfgVehicles {
 		displayName = "Passenger Wagon 02";
 		model = "rnc_misc\railways\rnc_passenger_wagon_02.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -139,7 +139,7 @@ class CfgVehicles {
 		displayName = "Hi-Speed Locomotive 01";
 		model = "rnc_misc\railways\rnc_hispeed_locomotive_01.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -162,7 +162,7 @@ class CfgVehicles {
 		displayName = "Hi-Speed Locomotive 02";
 		model = "rnc_misc\railways\rnc_hispeed_locomotive_02.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -185,7 +185,7 @@ class CfgVehicles {
 		displayName = "Hi-Speed Wagon 01";
 		model = "rnc_misc\railways\rnc_hispeed_wagon_01.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -208,7 +208,7 @@ class CfgVehicles {
 		displayName = "Hi-Speed Wagon 02";
 		model = "rnc_misc\railways\rnc_hispeed_wagon_02.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -231,7 +231,7 @@ class CfgVehicles {
 		displayName = "Container Wagon";
 		model = "rnc_misc\railways\rnc_container_wagon.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -254,7 +254,7 @@ class CfgVehicles {
 		displayName = "Log Wagon";
 		model = "rnc_misc\railways\rnc_log_wagon.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -277,7 +277,7 @@ class CfgVehicles {
 		displayName = "Hay Wagon";
 		model = "rnc_misc\railways\rnc_hay_wagon.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -300,7 +300,7 @@ class CfgVehicles {
 		displayName = "Ore Wagon";
 		model = "rnc_misc\railways\rnc_ore_wagon.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -323,7 +323,7 @@ class CfgVehicles {
 		displayName = "Gravel Wagon";
 		model = "rnc_misc\railways\rnc_Gravel_wagon.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -346,7 +346,7 @@ class CfgVehicles {
 		displayName = "Rail Tunnel";
 		model = "rnc_misc\railways\rnc_rail_tunnel.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Trains";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;

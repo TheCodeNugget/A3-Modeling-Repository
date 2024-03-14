@@ -48,7 +48,7 @@ class CfgVehicles {
 		scope = 0;
 		scopeCurator = 0;
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_decorations";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_fortress";
 		vehicleClass = "Structures_Cultural";
 		destrType = "DestructNo";

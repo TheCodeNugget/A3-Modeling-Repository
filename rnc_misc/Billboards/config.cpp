@@ -48,7 +48,7 @@ class CfgVehicles {
 			init = "''";
 		};
 	
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Services";
 	};
 	
@@ -69,7 +69,7 @@ class CfgVehicles {
 			init = "''";
 		};
 	
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Services";
 	};
 	
@@ -90,7 +90,7 @@ class CfgVehicles {
 			init = "''";
 		};
 	
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Services";
 	};
 	
@@ -111,7 +111,7 @@ class CfgVehicles {
 			init = "''";
 		};
 	
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Services";
 	};
 	
@@ -132,7 +132,7 @@ class CfgVehicles {
 			init = "''";
 		};
 	
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Services";
 	};
 };

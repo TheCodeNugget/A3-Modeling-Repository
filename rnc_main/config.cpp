@@ -51,16 +51,9 @@ class CfgVehicles {
 };
 
 class CfgEditorCategories {
-	class rnc_euObjects { // Category class, you point to it in editorCategory property
-		displayName = "Structures European (R&C)"; // Name visible in the list
-	};
 	
-	class rnc_miscObjects { // Category class, you point to it in editorCategory property
-		displayName = "Structures Miscellaneous (R&C)"; // Name visible in the list
-	};
-	
-	class rnc_ponds { // Category class, you point to it in editorCategory property
-		displayName = "Ponds (R&C)"; // Name visible in the list
+	class rnc_structures { // Category class, you point to it in editorCategory property
+		displayName = "Structures (R&C)"; // Name visible in the list
 	};
 	
 	class rnc_decorations { // Category class, you point to it in editorCategory property

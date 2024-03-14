@@ -42,7 +42,6 @@ class CfgVehicles {
 		class DestructionEffects {};
 	};
 	class Land_rnc_pond_11x26b: rnc_pondbase_blue {
-		scope=2;
 		displayName="Pond (11 x 26)";
 		model="rnc_ponds\rnc_pond_11x26b.p3d";
 	};

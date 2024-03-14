@@ -49,7 +49,7 @@ class CfgVehicles {
 		displayName = "Street Lamp Black (Off)";
 		model = "rnc_misc\streetlamp\rnc_street_lamp_01_black.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_lamps";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -111,7 +111,7 @@ class CfgVehicles {
 		displayName = "Street Lamp Black";
 		model = "rnc_misc\streetlamp\rnc_street_lamp_01_black.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_lamps";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;

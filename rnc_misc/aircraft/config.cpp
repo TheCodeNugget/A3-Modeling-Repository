@@ -47,7 +47,7 @@ class CfgVehicles {
 		displayName = "Cargo Plane Blank";
 		model = "rnc_misc\aircraft\rnc_cargo_jet\rnc_cargojet_blank.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -70,7 +70,7 @@ class CfgVehicles {
 		displayName = "Cargo Plane Banana";
 		model = "rnc_misc\aircraft\rnc_cargo_jet\rnc_cargojet_banana.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -93,7 +93,7 @@ class CfgVehicles {
 		displayName = "Cargo Plane Biplane";
 		model = "rnc_misc\aircraft\rnc_cargo_jet\rnc_cargojet_biplane.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -116,7 +116,7 @@ class CfgVehicles {
 		displayName = "Cargo Plane RummAir";
 		model = "rnc_misc\aircraft\rnc_cargo_jet\rnc_cargojet_rummair.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -139,7 +139,7 @@ class CfgVehicles {
 		displayName = "Passenger Plane Blank";
 		model = "rnc_misc\aircraft\rnc_pass_jet\rnc_passjet_blank.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -162,7 +162,7 @@ class CfgVehicles {
 		displayName = "Passenger Plane Biplane";
 		model = "rnc_misc\aircraft\rnc_pass_jet\rnc_passjet_biplane.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Planes";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;

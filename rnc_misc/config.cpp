@@ -49,7 +49,7 @@ class CfgVehicles {
 		displayName = "Ruler Vertical";
 		model = "rnc_misc\rnc_ruler_vertical.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_mapmaking";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -74,7 +74,7 @@ class CfgVehicles {
 		displayName = "Ruler Horizontal";
 		model = "rnc_misc\rnc_ruler_horizontal.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_mapmaking";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -99,7 +99,7 @@ class CfgVehicles {
 		displayName = "Jacob";
 		model = "rnc_misc\rnc_Jacob.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -129,7 +129,7 @@ class CfgVehicles {
 		displayName = "Container Trailer";
 		model = "rnc_misc\rnc_container_trailer.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -154,7 +154,7 @@ class CfgVehicles {
 		displayName = "Flatbed Trailer";
 		model = "rnc_misc\rnc_flatbed_trailer.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -177,7 +177,7 @@ class CfgVehicles {
 		displayName = "Rubber Duck";
 		model = "rnc_misc\rnc_rubber_duck.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -205,7 +205,7 @@ class CfgVehicles {
 		displayName = "Caravan 01";
 		model = "rnc_misc\rnc_caravan_01.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Transportation";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
@@ -228,7 +228,7 @@ class CfgVehicles {
 		displayName = "Caravan 02";
 		model = "rnc_misc\rnc_caravan_02.p3d";
 		icon = "iconObject_5x2";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "EdSubcat_Transportation";
 		vehicleClass = "Structures_Industrial";
 		cost = 2000;
