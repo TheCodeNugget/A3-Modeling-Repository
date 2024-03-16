@@ -40,9 +40,9 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Lateral Mark (Green)";
-		model = "rnc_sea\rnc_LateralMark_green.p3d";
+		model = "rnc_misc\naval_objects\rnc_LateralMark_green.p3d";
 		icon = "iconObject_10x1";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures";
 		destrType = "DestructNo";
@@ -55,9 +55,9 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Lateral Mark (Red)";
-		model = "rnc_sea\rnc_LateralMark_red.p3d";
+		model = "rnc_misc\naval_objects\rnc_LateralMark_red.p3d";
 		icon = "iconObject_10x1";
-		editorCategory = "rnc_miscObjects";
+		editorCategory = "rnc_structures";
 		editorSubcategory = "rnc_waterObj";
 		vehicleClass = "Structures";
 		destrType = "DestructNo";

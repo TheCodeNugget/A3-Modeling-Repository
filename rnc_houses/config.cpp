@@ -1,4 +1,5 @@
 #define _ARMA_
+#include "hitpoint_macros.hpp"
 
 //(13 Enums)
 enum {
@@ -18,31 +19,24 @@ enum {
 };
 
 class CfgPatches {
-	class rnc_ponds {
+	class rnc_houses {
 		addonRootClass = "rnc_main";
 		requiredAddons[] = {"rnc_main"};
 		requiredVersion = 0.1;
 		units[] = {
-			"Land_rnc_pond_11x26b"
-			};
+		};
 		weapons[] = {};
 	};
 };
+
 class CfgVehicles {
-	class NonStrategic;
-	class rnc_pondbase_blue: NonStrategic {
-		scope=0;
-		author="Bohemia Interactive";
-		displayName="pondbase";
-		editorCategory="rnc_ponds";
-		editorSubcategory="rnc_ponds_blue";
-		destrType="DestructNo";
-		Iswater=1;
-		cost=100;
-		class DestructionEffects {};
-	};
-	class Land_rnc_pond_11x26b: rnc_pondbase_blue {
-		displayName="Pond (11 x 26)";
-		model="rnc_ponds\rnc_pond_11x26b.p3d";
-	};
+	class House_Small_F;
+
+	#include "configs\house_1_config.hpp"
+	#include "configs\house_2_config.hpp"
+	#include "configs\house_3_config.hpp"
+	//#include "configs\house_4_config.hpp"
+	#include "configs\mayoral_house_config.hpp"
+	#include "configs\wooden_kiosk_config.hpp"
+	#include "configs\woodenHouse_02_config.hpp"
 };
