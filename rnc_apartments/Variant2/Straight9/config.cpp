@@ -33,7 +33,30 @@ class CfgPatches {
 	};
 };
 class CfgVehicles {
-	class rnc_house_base;
+	class House_Small_F{
+		class Eventhandlers;
+		class DestructionEffects;
+	};
+	
+	class rnc_house_base: House_Small_F{
+		class EventHandlers: EventHandlers{
+			dragged3DEN = "_this call rnc_fnc_house_snap;";
+			registeredToWorld3DEN = "_this call rnc_fnc_house_snap;";
+		};
+		
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\A3\Structures_F\Households\House_Shop01\Shop_01_V1_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};
 
 	class Land_rnc_apt_v2_s9_c1_f3: rnc_house_base {
 		scope = 2;

@@ -37,19 +37,6 @@ class CfgFunctions {
 	};
 };
 
-class CfgVehicles {
-	class House_Small_F{
-		class Eventhandlers;
-	};
-	
-	class rnc_house_base: House_Small_F{
-		class EventHandlers: EventHandlers{
-			dragged3DEN = "_this call rnc_fnc_house_snap;";
-			registeredToWorld3DEN = "_this call rnc_fnc_house_snap;";
-		};
-	};
-};
-
 class CfgEditorCategories {
 	
 	class rnc_structures { // Category class, you point to it in editorCategory property
