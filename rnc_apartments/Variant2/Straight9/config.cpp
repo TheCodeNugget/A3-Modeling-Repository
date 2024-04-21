@@ -49,7 +49,7 @@ class CfgVehicles {
 			class Ruin
 			{
 				simulation = ruin;
-				type = "\A3\Structures_F\Households\House_Shop01\Shop_01_V1_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_yellow_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
 				position = "";
 				intensity = 1;
 				interval = 1;
@@ -201,6 +201,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4);
 		};
 
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_pink_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+
 		class Damage {
 			tex[] = {
 				// Window textures
@@ -309,6 +322,19 @@ class CfgVehicles {
 	class Land_rnc_apt_v2_s9_c1_f5: Land_rnc_apt_v2_s9_c1_f4 {
 		displayName = "Apartment V2/S9/C1/F5";
 		model = "rnc_apartments\variant2\straight9\rnc_apt_v2_s9_c1_f5.p3d";
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_brown_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 
 	class Land_rnc_apt_v2_s9_c1_f6: rnc_house_base {
@@ -336,6 +362,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(6,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(7,0.001,0.4);
+		};
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
 		};
 
 		class Damage {

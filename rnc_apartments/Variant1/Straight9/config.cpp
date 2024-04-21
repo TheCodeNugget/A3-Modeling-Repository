@@ -49,7 +49,7 @@ class CfgVehicles {
 			class Ruin
 			{
 				simulation = ruin;
-				type = "\A3\Structures_F\Households\House_Shop01\Shop_01_V1_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_yellow_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
 				position = "";
 				intensity = 1;
 				interval = 1;
@@ -228,6 +228,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(7,0.001,0.1);
 		};
 
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_pink_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+
 		class Damage {
 			tex[] = {
 				// Window textures
@@ -366,6 +379,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(12,0.001,0.1);
 		};
 
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_brown_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+
 		class Damage {
 			tex[] = {
 				// Window textures
@@ -488,6 +514,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(5,0.001,0.1);
 		};
 
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "a3\structures_f_argo\Commercial\Shop_02\Shop_02_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+
 		class Damage {
 			tex[] = {
 				// Window textures
@@ -521,6 +560,7 @@ class CfgVehicles {
 				"A3\Structures_F\Data\Windows\destruct_full_window_set.rvmat"
 			};
 		};
+
 
 		class AnimationSources {
 			class door_1_source {

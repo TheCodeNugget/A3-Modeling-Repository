@@ -186,6 +186,19 @@ class CfgVehicles {
 	class Land_rnc_apt_v2_c9_c1_f4: Land_rnc_apt_v2_c9_c1_f3{
 		displayName = "Apartment V2/C9/C1/F4";
 		model = "rnc_apartments\variant2\cube9\rnc_apt_v2_c9_c1_f4.p3d";
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 
 	class Land_rnc_apt_v2_c9_c1_f5: rnc_house_base {
@@ -211,6 +224,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(3,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(4,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4);
+		};
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_brown_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
 		};
 
 		class Damage {
@@ -345,6 +371,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(5,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(6,0.001,0.4);
 			NORMAL_GLASS_HITPOINT(7,0.001,0.4);
+		};
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_yellow_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
 		};
 
 		class Damage {

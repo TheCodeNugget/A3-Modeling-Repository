@@ -259,6 +259,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(24,0.001,0.1);
 		};
 
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+
 		class Damage {
 			tex[] = {
 				// Window textures
@@ -403,6 +416,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(15,0.001,0.1);
 			NORMAL_GLASS_HITPOINT(16,0.001,0.1);
 			NORMAL_GLASS_HITPOINT(17,0.001,0.1);
+		};
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_brown_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
 		};
 
 		class Damage {
@@ -563,6 +589,19 @@ class CfgVehicles {
 			NORMAL_GLASS_HITPOINT(22,0.001,0.1);
 			NORMAL_GLASS_HITPOINT(23,0.001,0.1);
 			NORMAL_GLASS_HITPOINT(24,0.001,0.1);
+		};
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\a3\structures_f_argo\civilian\House_Big01\House_Big_01_b_yellow_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
 		};
 
 		class Damage {

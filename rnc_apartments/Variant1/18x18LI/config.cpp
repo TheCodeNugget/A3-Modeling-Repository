@@ -49,7 +49,7 @@ class CfgVehicles {
 			class Ruin
 			{
 				simulation = ruin;
-				type = "\A3\Structures_F_Argo\Civilian\House_Big01\House_Big_01_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				type = "\A3\Structures_F_Argo\Civilian\House_Big01\House_Big_01_b_brown_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
 				position = "";
 				intensity = 1;
 				interval = 1;
@@ -299,16 +299,55 @@ class CfgVehicles {
 	class Land_rnc_apt_v1_18x18LI_c1_f4: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F4";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f4.p3d";
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\A3\Structures_F_Argo\Civilian\House_Big01\House_Big_01_b_blue_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 
 	class Land_rnc_apt_v1_18x18LI_c1_f5: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F5";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f5.p3d";
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\A3\Structures_F_Argo\Civilian\House_Big01\House_Big_01_b_pink_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 
 	class Land_rnc_apt_v1_18x18LI_c1_f6: Land_rnc_apt_v1_18x18LI_c1_f3{
 		displayName = "Apartment V1/18x18LI/C1/F6";
 		model = "rnc_apartments\variant1\18x18LI\rnc_apt_v1_18x18LI_c1_f6.p3d";
+
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin
+			{
+				simulation = ruin;
+				type = "\A3\Structures_F_Argo\Civilian\House_Big01\House_Big_01_b_yellow_ruins_F.p3d"; // Path to model of ruin used when total damage of the house reaches 1
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 	
 	class Land_rnc_apt_v1_18x18LI_c2_f3: Land_rnc_apt_v1_18x18LI_c1_f3{
