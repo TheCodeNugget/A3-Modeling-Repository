@@ -188,6 +188,34 @@ class CfgVehicles {
 		displayName = "Rubber Duck Smol";
 		model = "rnc_misc\rnc_rubber_duck_smol.p3d";
 	};
+
+	class Land_rnc_alwarren: House_Small_F {
+		author = "RUMM & COKE Team";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 1.358;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Alwarren";
+		model = "rnc_misc\rnc_alwarren.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_structures";
+		editorSubcategory = "rnc_waterObj";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
+	
+	class Land_rnc_alwarren_smol: Land_rnc_rubber_duck {
+		displayName = "Alwarren Smol";
+		model = "rnc_misc\rnc_alwarren_smol.p3d";
+	};
 	
 	class Land_rnc_caravan_01: House_Small_F {
 		author = "RUMM & COKE Team";
