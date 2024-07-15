@@ -168,4 +168,27 @@ class CfgVehicles {
 		cost = 2000;
 		keepHorizontalPlacement = 0;
 	};
+
+	class Land_passjet_banana: House_F {
+		author = "RUMM & COKE Team / Quaternius";
+		mapSize = 6.1;
+		class SimpleObject {
+			eden = 0;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "";
+		scope = 2;
+		displayName = "Passenger Plane Banana Air";
+		model = "rnc_misc\aircraft\rnc_pass_jet\rnc_passjet_banana.p3d";
+		icon = "iconObject_5x2";
+		editorCategory = "rnc_structures";
+		editorSubcategory = "EdSubcat_Planes";
+		vehicleClass = "Structures_Industrial";
+		cost = 2000;
+		keepHorizontalPlacement = 0;
+	};
 };
