@@ -1,29 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: Items\Food\config.bin
-//Produced from mikero's Dos Tools Dll version 9.10
-//https://mikero.bytex.digital/Downloads
-//'now' is Sat Nov 11 17:53:36 2023 : 'file' last modified on Tue Aug 01 11:55:50 2023
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-//(13 Enums)
-enum {
-	destructengine = 2,
-	destructdefault = 6,
-	destructwreck = 7,
-	destructtree = 3,
-	destructtent = 4,
-	stabilizedinaxisx = 1,
-	stabilizedinaxesxyz = 4,
-	stabilizedinaxisy = 2,
-	stabilizedinaxesboth = 3,
-	destructno = 0,
-	stabilizedinaxesnone = 0,
-	destructman = 5,
-	destructbuilding = 1
-};
-
 class CfgPatches
 {
 	class nug_cerveza_cristal
@@ -45,7 +19,7 @@ class CfgVehicles
 	class Items_base_F;
 	class nug_cerveza_cristal: Items_base_F
 	{
-		author = "Ken The Nugget & Polycrow";
+		author = "Ken The Nugget";
 		mapSize = 0.05;
 		class SimpleObject
 		{
@@ -116,28 +90,68 @@ class CfgAmmo
 		soundHit5[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
 	};
 
-	class Grenade;
-	class CervezaAmmo: Grenade
-	{
-		hit = 10;
-		indirectHit = 10;
-		indirectHitRange = 7;
-		dangerRadiusHit = 36;
-		suppressionRadiusHit = 24;
-		typicalspeed = 18;
+	class Default;	// External class reference
+	class Grenade : Default {};
+	class GrenadeHand : Grenade {};
+	class mini_Grenade;
+	class Nug_Cerveza_Impact : GrenadeHand {
 		model = "\nug_cerveza_cristal\nug_cerveza_grenade.p3d";
-		//model = "\nug_cerveza_cristal\nug_cerveza_cristal.p3d";
-		visibleFire = 0.5;
-		audibleFire = 0.05;
-		visibleFireTime = 1;
+		hit = 8;
+		indirectHit = 8;
+		indirectHitRange = 6;
+		dangerRadiusHit = -1;
+		suppressionRadiusHit = -1;
+		typicalspeed = 22;
+		cost = 1;
+		simulation = "shotGrenade";
+		explosive = 1;
+		explosionType = "explosive";
+		deflecting = 30;
+		explosionTime = -1;
+		timeToLive = 30;
 		fuseDistance = 0;
-		deflecting = 3;
-		//soundFly[] = {"\nug_cerveza_cristal\data\fly.wss",2,1,700};
-		//soundHit1[] = {"\nug_cerveza_cristal\data\impact.wss",2.5118864,1,1500};
-		//soundHit2[] = {"\nug_cerveza_cristal\data\impact.wss",2.5118864,1,1500};
-		//soundHit3[] = {"\nug_cerveza_cristal\data\impact.wss",2.5118864,1,1500};
-		//soundHit4[] = {"\nug_cerveza_cristal\data\impact.wss",2.5118864,1,1500};
+		soundHit[] = {"",0,1};
+		whistleDist = 0;
+		weaponType = "Default";
+		caliber = 1;
+		SoundSetExplosion[] = {};
+		soundHit1[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit2[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit3[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit4[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		multiSoundHit[] = {"soundHit1",0.25,"soundHit2",0.25,"soundHit3",0.25,"soundHit4",0.25};
+		//explosionSoundEffect = "Nug_Sound_Cerveza_Cristal";
 	};
+
+	class Nug_Cerveza_Impact_mini  : mini_Grenade {
+		model = "\nug_cerveza_cristal\nug_cerveza_grenade_mini.p3d";
+		hit = 4;
+		indirectHit = 6;
+		indirectHitRange = 5;
+		dangerRadiusHit = -1;
+		suppressionRadiusHit = -1;
+		typicalspeed = 22;
+		cost = 1;
+		simulation = "shotGrenade";
+		explosive = 1;
+		explosionType = "explosive";
+		deflecting = 30;
+		explosionTime = -1;
+		timeToLive = 30;
+		fuseDistance = 0;
+		whistleDist = 0;
+		weaponType = "Default";
+		caliber = 1;
+		SoundSetExplosion[] = {};
+		soundHit1[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit2[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit3[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		soundHit4[] = {"\nug_cerveza_cristal\data\impact.wss",2,1,2400};
+		multiSoundHit[] = {"soundHit1",0.25,"soundHit2",0.25,"soundHit3",0.25,"soundHit4",0.25};
+	};
+
+		//model = "\nug_cerveza_cristal\nug_cerveza_grenade.p3d";
+		//model = "\nug_cerveza_cristal\nug_cerveza_cristal.p3d";
 };
 
 class CfgMagazines
@@ -166,25 +180,45 @@ class CfgMagazines
 		mass = 230;
 	};
 
-	class CA_Magazine;
-	class CervezaGrenade: CA_Magazine
-	{
+	class Default;	// External class reference
+	class CA_Magazine : Default {};
+	class HandGrenade : CA_Magazine {};
+	class Nug_Cerveza_Impact_Grenade :  HandGrenade {
 		author = "Ken The Nugget";
-		mass = 5;
-		scope = 2;
-		value = 1;
-		displayName = "Cerveza Cristal";
-		//picture = "";
+		displayName = "Cerveza Grenade (Impact)";
+		picture = "\nug_cerveza_cristal\data\cerveza_icon.paa";
 		model = "\nug_cerveza_cristal\nug_cerveza_grenade.p3d";
-		//model = "\nug_cerveza_cristal\nug_cerveza_cristal.p3d";
-		type = 256;
-		ammo = "CervezaAmmo";
-		count = 1;
-		initSpeed = 21;
+		value = 2;
+		ammo = "Nug_Cerveza_Impact";
 		nameSound = "handgrenade";
-		maxLeadSpeed = 7;
-		descriptionShort = "Cerveza Cristal";
-		displayNameShort = "Cerveza Cristal";
+		descriptionShort = "Cerveza Impact";
+		displayNameShort = "Cerveza Impact";
+		mass = 8;
+		initSpeed = 18;
+		type=256;
+		maxThrowHoldTime = 2;
+		maxThrowIntensityCoef = 1.4;
+		minThrowIntensityCoef = 0.3;
+		scope=2;
+	};
+
+	class Nug_Cerveza_Impact_Grenade_mini :  HandGrenade {
+		author = "Ken The Nugget";
+		displayName = "Cerveza Grenade Mini (Impact)";
+		picture = "\nug_cerveza_cristal\data\cerveza_icon.paa";
+		model = "\nug_cerveza_cristal\nug_cerveza_grenade_mini.p3d";
+		value = 2;
+		ammo = "Nug_Cerveza_Impact_mini";
+		nameSound = "handgrenade";
+		descriptionShort = "Cerveza Impact Mini";
+		displayNameShort = "Cerveza Impact Mini";
+		mass = 4;
+		initSpeed = 26;
+		type=256;
+		maxThrowHoldTime = 2;
+		maxThrowIntensityCoef = 1.4;
+		minThrowIntensityCoef = 0.3;
+		scope=2;
 	};
 };
 
@@ -204,46 +238,39 @@ class CfgWeapons
 		};
 	};
 
-	class GrenadeLauncher;
-	class Throw: GrenadeLauncher
-	{
-		scope = 1;
-		autoAimEnabled = 0;
-		cursor = "EmptyCursor";
-		cursorAim = "throw";
-		value = 0;
-		type = 0;
-		displayName = "$STR_DN_THROW";
-		canDrop = 0;
-		textureType = "semi";
-		magazineReloadTime = 0;
-		reloadTime = 0;
-		muzzles[] += {"CervezaGrenadeMuzzle"};
-		class ThrowMuzzle: GrenadeLauncher
-		{
+	class Default;
+	class GrenadeLauncher : Default {};
+	class Throw : GrenadeLauncher {
+		muzzles[] += {"Cerveza_Impact_Muzzle", "Cerveza_Impact_Mini_Muzzle"};
+		class  ThrowMuzzle: GrenadeLauncher {
+			aidispersioncoefx = 6;
+			aidispersioncoefy = 6;
+			autoreload = 1;
 			cursor = "EmptyCursor";
-			cursorAim = "throw";
-			sound[] = {"",0.00031622776,1};
-			reloadSound[] = {"",0.00031622776,1};
-			aiDispersionCoefX = 6;
-			aiDispersionCoefY = 6;
-			reloadTime = 0;
-			magazineReloadTime = 2.5;
-			enableAttack = 0;
-			showEmpty = 0;
-			autoReload = 1;
-			modelOptics = "";
-			minRange = 10;
-			minRangeProbab = 0.2;
-			midRange = 45;
-			midRangeProbab = 0.9;
-			maxRange = 60;
-			maxRangeProbab = 0.03;
-			keepInInventory = 1;
+			cursoraim = "throw";
+			enableattack = 1;
+			keepininventory = 1;
+			magazinereloadtime = 0;
+			maxrange = 60;
+			maxrangeprobab = 0.03;
+			midrange = 45;
+			midrangeprobab = 0.9;
+			minrange = 10;
+			minrangeprobab = 0.2;
+			modeloptics = "";
+			reloadsound[] = {"", 0.000316228, 1};
+			reloadtime = 0;
+			showempty = 0;
+			sound[] = {"", 0.000316228, 1};
 		};
-		class CervezaGrenadeMuzzle: ThrowMuzzle
+
+		class Cerveza_Impact_Muzzle: ThrowMuzzle {
+			magazines[] = {"Nug_Cerveza_Impact_Grenade"};
+		};
+
+		class Cerveza_Impact_Mini_Muzzle: ThrowMuzzle
 		{
-			magazines[] = {"CervezaGrenade"};
+			magazines[] = {"Nug_Cerveza_Impact_Grenade_mini"};
 		};
 	};
 };
