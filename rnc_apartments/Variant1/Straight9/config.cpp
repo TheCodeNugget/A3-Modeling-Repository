@@ -618,16 +618,16 @@ class CfgVehicles {
 		ActionEnd2 = openDoor_2;
 	};
 	
-	class Land_rnc_apt_v1_s9_c2_f3: Land_rnc_apt_v1_s9_c1_f6{
+	class Land_rnc_apt_v1_s9_c2_f3: Land_rnc_apt_v1_s9_c1_f3{
 		displayName = "Apartment V1/S9/C2/F3";
 		model = "rnc_apartments\variant1\straight9\rnc_apt_v1_s9_c2_f3.p3d";
 	};
 	
-	class Land_rnc_apt_v1_s9_c2_f4: Land_rnc_apt_v1_s9_c1_f6{
+	class Land_rnc_apt_v1_s9_c2_f4: Land_rnc_apt_v1_s9_c1_f4{
 		displayName = "Apartment V1/S9/C2/F4";
 		model = "rnc_apartments\variant1\straight9\rnc_apt_v1_s9_c2_f4.p3d";
 	};
-	class Land_rnc_apt_v1_s9_c2_f5: Land_rnc_apt_v1_s9_c1_f6{
+	class Land_rnc_apt_v1_s9_c2_f5: Land_rnc_apt_v1_s9_c1_f5{
 		displayName = "Apartment V1/S9/C2/F5";
 		model = "rnc_apartments\variant1\straight9\rnc_apt_v1_s9_c2_f5.p3d";
 	};
