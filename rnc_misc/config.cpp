@@ -216,4 +216,83 @@ class CfgVehicles {
 		displayName = "Alwarren Smol";
 		model = "rnc_misc\rnc_alwarren_smol.p3d";
 	};
+
+	class FlagCarrier;
+	class Flag_Mehland_F: FlagCarrier {
+		author = "RUMM & COKE Team";
+		class SimpleObject {
+			eden = 0;
+			animate[] = {{"flag",0}};
+			hide[] = {};
+			verticalOffset = 3.977;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Flag_Vrana_F.jpg";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Mehland Flag";
+		class EventHandlers
+		{
+			init = "(_this select 0) setFlagTexture '\rnc_misc\data\flag_of_mehland_co.paa'";
+		};
+	};
+
+	class thing;
+	class Rnc_Particle_BigFire_F: thing {
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {};
+			hide[] = {};
+			verticalOffset = 0.0010700001;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		simulation = "Fire";
+		icon = "iconObject_circle";
+		editorCategory = "EdCat_Effects";
+		class EventHandlers
+		{
+			init = "if (is3DEN) then {(_this # 0) spawn {_this enablesimulation true;}};(_this # 0) inflame true;(_this # 0) hideObject true;";
+		};
+		displayName = "$STR_A3_C_CfgVehicles_Particle_BigFire_F0";
+		scope = 1;
+		scopeCurator = 1;
+		editorSubcategory = "EdSubcat_Fire";
+		class Effects {
+			class Fire {
+				simulation = "particles";
+				type = "BigDestructionFire";
+			};
+			class FireSparks {
+				simulation = "particles";
+				type = "FireSparks";
+			};
+			class Smoke {
+				simulation = "particles";
+				type = "BigDestructionSmoke";
+			};
+			class Refract {
+				simulation = "particles";
+				type = "ObjectDestructionRefract";
+			};
+			class Light {
+				simulation = "light";
+				type = "rnc_BigFireLight";
+			};
+			class Sound {
+				simulation = "sound";
+				type = "Fire";
+			};
+		};
+	};
+};
+
+class CfgLights {
+	class ObjectDestructionLight;
+	class rnc_BigFireLight: ObjectDestructionLight
+	{
+		intensity = "25000 * (power interpolate [0.1, 1.0, 0.7, 1.0])";
+	};
 };
