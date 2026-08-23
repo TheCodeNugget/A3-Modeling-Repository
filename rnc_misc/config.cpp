@@ -261,8 +261,11 @@ class CfgVehicles {
 		};
 	};
 
-	class thing;
-	class Rnc_Particle_BigFire_F: thing {
+	class All;
+	class Thing: All {
+		class EventHandlers;
+	};
+	class Rnc_Particle_BigFire_F: Thing {
 		class SimpleObject
 		{
 			eden = 1;
@@ -275,7 +278,7 @@ class CfgVehicles {
 		simulation = "Fire";
 		icon = "iconObject_circle";
 		editorCategory = "EdCat_Effects";
-		class EventHandlers
+		class EventHandlers: EventHandlers
 		{
 			init = "if (is3DEN) then {(_this # 0) spawn {_this enablesimulation true;}};(_this # 0) inflame true;(_this # 0) hideObject true;";
 		};
